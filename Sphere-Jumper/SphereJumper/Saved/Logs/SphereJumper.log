@@ -2480,3 +2480,159 @@ Exception rethrown at [0]:
 [2021.02.02-19.47.57:170][392]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/WaterDetection]
 [2021.02.02-19.47.57:210][392]LogSavePackage: Moving '../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/WaterDetection_Auto5226135214AEBB8AD0EBFD1BAB4BA294D.tmp' to '../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Autosaves/Game/Blueprints/WaterDetection_Auto5.uasset'
 [2021.02.02-19.47.57:212][392]LogFileHelpers: Auto-saving content packages took 0.226
+[2021.02.02-19.49.15:501][944]LogEditorViewport: Clicking on Actor (LMB): WaterDetection_C (WaterDetection)
+[2021.02.02-19.49.16:340][ 38]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (Platform7)
+[2021.02.02-19.49.17:003][112]LogEditorViewport: Clicking on Actor (LMB): SphereReflectionCapture (SphereReflectionCapture)
+[2021.02.02-19.49.22:254][710]Cmd: DELETE
+[2021.02.02-19.49.22:255][710]Cmd: ACTOR DELETE
+[2021.02.02-19.49.22:479][710]LogEditorActor: Deleted Actor: SphereReflectionCapture
+[2021.02.02-19.49.22:528][710]LogUObjectHash: Compacting FUObjectHashTables data took   0.86ms
+[2021.02.02-19.49.22:539][710]LogEditorActor: Deleted 1 Actors (0.284 secs)
+[2021.02.02-19.49.25:147][  4]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere5)
+[2021.02.02-19.49.25:638][ 51]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere5)
+[2021.02.02-19.49.26:707][161]LogEditorViewport: Clicking on Actor (LMB): SphereReflectionCapture (SphereReflectionCapture10)
+[2021.02.02-19.49.28:933][403]Cmd: DELETE
+[2021.02.02-19.49.28:933][403]Cmd: ACTOR DELETE
+[2021.02.02-19.49.28:935][403]LogEditorActor: Deleted Actor: SphereReflectionCapture
+[2021.02.02-19.49.28:968][403]LogUObjectHash: Compacting FUObjectHashTables data took   0.54ms
+[2021.02.02-19.49.28:972][403]LogEditorActor: Deleted 1 Actors (0.039 secs)
+[2021.02.02-19.49.39:894][683]LogEditorViewport: Clicking on Actor (LMB): RectLight (RectLight3)
+[2021.02.02-19.49.48:583][144]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Rock27)
+[2021.02.02-19.49.49:875][274]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere7)
+[2021.02.02-19.49.50:866][385]LogEditorViewport: Clicking on Actor (LMB): RectLight (RectLight3)
+[2021.02.02-19.49.53:586][703]Cmd: DUPLICATE
+[2021.02.02-19.49.53:586][703]Cmd: ACTOR DUPLICATE
+[2021.02.02-19.51.59:506][860]LogSlate: Window 'Color Picker' being destroyed
+[2021.02.02-19.52.18:617][907]LogSlate: Window 'Color Picker' being destroyed
+[2021.02.02-19.52.41:536][537]LogSlate: Window 'Color Picker' being destroyed
+[2021.02.02-19.52.44:870][911]LogEditorViewport: Clicking on Actor (LMB): WaterDetection_C (WaterDetection)
+[2021.02.02-19.52.45:799][  8]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Rock9)
+[2021.02.02-19.52.47:326][184]LogEditorViewport: Clicking on Actor (LMB): Gem_C (Gem2)
+[2021.02.02-19.52.56:881][272]LogSlate: Window 'Color Picker' being destroyed
+[2021.02.02-19.52.58:423][443]LogEditorViewport: Clicking on Actor (LMB): WaterDetection_C (WaterDetection)
+[2021.02.02-19.53.00:382][669]LogEditorViewport: Clicking on Actor (LMB): RectLight (RectLight2)
+[2021.02.02-19.53.07:041][389]LogSlate: Window 'Color Picker' being destroyed
+[2021.02.02-19.53.08:120][509]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere5)
+[2021.02.02-19.53.19:620][799]LogEditorViewport: Clicking on Actor (LMB): Gem_C (Gem3)
+[2021.02.02-19.53.28:653][787]LogSlate: Window 'Color Picker' being destroyed
+[2021.02.02-19.53.29:837][922]LogEditorViewport: Clicking on Actor (LMB): RectLight (RectLight4)
+[2021.02.02-19.53.34:435][420]LogSlate: Window 'Color Picker' being destroyed
+[2021.02.02-19.53.37:207][726]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere7)
+[2021.02.02-19.54.33:253][218]MapCheck: New page: Map Check
+[2021.02.02-19.54.33:270][218]LightingResults: New page: Lighting Build - Feb 2, 2021, 9:54:33 AM
+[2021.02.02-19.54.33:522][218]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2021.02.02-19.54.33:534][218]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2021.02.02-19.54.33:534][218]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2021.02.02-19.54.33:536][218]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2021.02.02-19.54.33:536][218]LogSwarmInterface: [TryOpenConnection] Local Process ID is 15280
+[2021.02.02-19.54.38:056][218]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2021.02.02-19.54.38:056][218]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2021.02.02-19.54.38:056][218]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2021.02.02-19.54.38:056][218]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2021.02.02-19.54.38:056][218]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2021.02.02-19.54.38:056][218]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2021.02.02-19.54.38:206][218]LogEditorBuildUtils: Build time 0:04
+[2021.02.02-19.54.38:276][219]LogUObjectHash: Compacting FUObjectHashTables data took   2.25ms
+[2021.02.02-19.54.42:635][404]LogEditorViewport: Clicking on Actor (LMB): RectLight (RectLight5)
+[2021.02.02-19.54.52:912][847]Job is a success!
+[2021.02.02-19.54.53:207][848]LogEditorTransaction: Non zero active count in UTransBuffer::Reset
+ActiveCount : 3
+SessionName : 
+Reason      : Applying Lighting
+
+Purging the undo buffer...
+
+[2021.02.02-19.54.53:340][848]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.033s
+[2021.02.02-19.54.53:340][848]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
+[2021.02.02-19.54.53:340][848]LogVolumetricLightmapImport:      BrickData (all levels) 0.4Mb (trimmed 0.0Mb due to 0.010000 MinBrickError)
+[2021.02.02-19.54.53:340][848]LogVolumetricLightmapImport:      Bricks at depth
+[2021.02.02-19.54.53:340][848]LogVolumetricLightmapImport:          0: 1.0% covering 100.0% of volume
+[2021.02.02-19.54.53:340][848]LogVolumetricLightmapImport:          1: 4.1% covering 6.3% of volume
+[2021.02.02-19.54.53:340][848]LogVolumetricLightmapImport:          2: 94.8% covering 2.2% of volume
+[2021.02.02-19.54.53:340][848]LogVolumetricLightmapImport:      Bricks in each level
+[2021.02.02-19.54.53:340][848]LogVolumetricLightmapImport:          Minimal_Default 			 97 bricks 	 100.0% (Persistent Level)
+[2021.02.02-19.54.53:892][848]LogTexture: Display: Building textures: HQ_Lightmap0_2 (AutoDXT, 128X128)
+[2021.02.02-19.54.53:892][848]LogTexture: Display: Building textures: HQ_Lightmap0_1 (AutoDXT, 1024X1024)
+[2021.02.02-19.54.53:892][848]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 128X128)
+[2021.02.02-19.54.53:892][848]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 1024X1024)
+[2021.02.02-19.54.53:892][848]LogTexture: Display: Building textures: HQ_Lightmap0_3 (AutoDXT, 64X64)
+[2021.02.02-19.54.53:892][848]LogTexture: Display: Building textures: LQ_Lightmap_0_3 (DXT1, 64X64)
+[2021.02.02-19.54.53:971][848]LogTexture: Display: Building textures: ShadowMapTexture2D_28 (G8, 32X32)
+[2021.02.02-19.54.53:971][848]LogTexture: Display: Building textures: ShadowMapTexture2D_27 (G8, 256X32)
+[2021.02.02-19.54.53:971][848]LogTexture: Display: Building textures: ShadowMapTexture2D_26 (BGRA8, 1024X256)
+[2021.02.02-19.54.53:972][848]LogStaticLightingSystem: Minimal_Default_BuiltData storing lightmap data for 53 meshes in 3 LightmapResourceClusters (17.7 Meshes per cluster).
+[2021.02.02-19.54.53:976][848]Lightmass on DESKTOP-OGQH2TG: 13.4 sec total, 896 ms importing, 83 ms setup, 478 ms photons, 11.9 sec processing, 0 ms extra exporting [53/53 mappings]. Threads: 2:11 min total, 1:27 min processing.
+[2021.02.02-19.54.54:168][848]LogUObjectHash: Compacting FUObjectHashTables data took   4.02ms
+[2021.02.02-19.54.54:205][848]LogStaticLightingSystem: Illumination: 20.8 sec (513 ms encoding lightmaps, 56 ms encoding shadowmaps)
+[2021.02.02-19.54.54:205][848]LogStaticLightingSystem: Lightmap texture memory:  2.3 MB (2.3 MB streaming, 0.0 MB non-streaming), 6 textures
+[2021.02.02-19.54.54:205][848]LogStaticLightingSystem: Shadowmap texture memory: 1.5 MB (1.5 MB streaming, 0.0 MB non-streaming), 3 textures
+[2021.02.02-19.54.59:089][848]DumpUnbuiltLightIteractions
+[2021.02.02-19.54.59:089][848]Lights with unbuilt interactions: 0
+[2021.02.02-19.54.59:089][848]
+[2021.02.02-19.54.59:090][848]Primitives with unbuilt interactions: 0
+[2021.02.02-19.54.59:200][849]Cmd: MAP CHECK NOTIFYRESULTS
+[2021.02.02-19.54.59:200][849]MapCheck: New page: Minimal_Default - Feb 2, 2021, 9:54:59 AM
+[2021.02.02-19.54.59:201][849]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.959ms to complete.
+[2021.02.02-19.55.06:867][690]LogSlate: Window 'Color Picker' being destroyed
+[2021.02.02-19.55.26:954][ 55]LogEditorViewport: Clicking on Actor (LMB): StaticMeshActor (SM_Rock12)
+[2021.02.02-19.55.27:879][151]LogEditorViewport: Clicking on Actor (LMB): RectLight (RectLight)
+[2021.02.02-19.56.00:806][854]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere6)
+[2021.02.02-19.56.05:609][351]LogEditorViewport: Clicking on Actor (LMB): RectLight (RectLight)
+[2021.02.02-19.56.58:219][290]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere6)
+[2021.02.02-19.57.06:109][208]LogEditorViewport: Clicking on Actor (LMB): WaterDetection_C (WaterDetection)
+[2021.02.02-19.57.07:456][364]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere7)
+[2021.02.02-19.57.20:175][841]LogEditorViewport: Clicking on Actor (LMB): RectLight (RectLight)
+[2021.02.02-19.57.57:279][  8]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere7)
+[2021.02.02-19.58.01:495][450]LogEditorViewport: Clicking on Actor (LMB): RectLight (RectLight)
+[2021.02.02-19.58.04:104][753]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere7)
+[2021.02.02-19.58.09:639][289]MapCheck: New page: Map Check
+[2021.02.02-19.58.09:658][289]LightingResults: New page: Lighting Build - Feb 2, 2021, 9:58:09 AM
+[2021.02.02-19.58.09:673][289]LogSwarmInterface: [OpenConnection] Registering TCP channel ...
+[2021.02.02-19.58.09:677][289]LogSwarmInterface: [OpenConnection] Connecting to agent ...
+[2021.02.02-19.58.09:677][289]LogSwarmInterface: [TryOpenConnection] Testing the Agent
+[2021.02.02-19.58.09:678][289]LogSwarmInterface: [TryOpenConnection] Opening Connection to Agent
+[2021.02.02-19.58.09:678][289]LogSwarmInterface: [TryOpenConnection] Local Process ID is 15280
+[2021.02.02-19.58.14:196][289]LogStaticLightingSystem: Warning: No importance volume found, so the scene bounding box was used.  You can optimize your scene's quality and lighting build times by adding importance volumes.
+[2021.02.02-19.58.14:197][289]LogStaticLightingSystem: Running Lightmass w/ ImmediateImport mode ENABLED
+[2021.02.02-19.58.14:197][289]LogStaticLightingSystem: Running Lightmass w/ ImmediateProcess mode ENABLED
+[2021.02.02-19.58.14:197][289]LogStaticLightingSystem: Running Lightmass w/ Sorting mode ENABLED
+[2021.02.02-19.58.14:197][289]LogStaticLightingSystem: Running Lightmass w/ Mapping paddings ENABLED
+[2021.02.02-19.58.14:197][289]LogStaticLightingSystem: Running Lightmass w/ Mapping debug paddings DISABLED
+[2021.02.02-19.58.14:478][289]LogEditorBuildUtils: Build time 0:04
+[2021.02.02-19.58.14:555][290]LogUObjectHash: Compacting FUObjectHashTables data took   3.05ms
+[2021.02.02-19.58.27:155][ 21]Job is a success!
+[2021.02.02-19.58.27:270][ 23]LogVolumetricLightmapImport: Imported Volumetric Lightmap in 0.015s
+[2021.02.02-19.58.27:270][ 23]LogVolumetricLightmapImport:      Indirection Texture 16x16x16 = 0.0Mb
+[2021.02.02-19.58.27:270][ 23]LogVolumetricLightmapImport:      BrickData (all levels) 0.4Mb (trimmed 0.0Mb due to 0.010000 MinBrickError)
+[2021.02.02-19.58.27:270][ 23]LogVolumetricLightmapImport:      Bricks at depth
+[2021.02.02-19.58.27:270][ 23]LogVolumetricLightmapImport:          0: 1.0% covering 100.0% of volume
+[2021.02.02-19.58.27:270][ 23]LogVolumetricLightmapImport:          1: 4.1% covering 6.3% of volume
+[2021.02.02-19.58.27:270][ 23]LogVolumetricLightmapImport:          2: 94.9% covering 2.3% of volume
+[2021.02.02-19.58.27:270][ 23]LogVolumetricLightmapImport:      Bricks in each level
+[2021.02.02-19.58.27:270][ 23]LogVolumetricLightmapImport:          Minimal_Default 			 98 bricks 	 100.0% (Persistent Level)
+[2021.02.02-19.58.27:562][ 23]LogTexture: Display: Building textures: HQ_Lightmap1_1 (AutoDXT, 1024X1024)
+[2021.02.02-19.58.27:562][ 23]LogTexture: Display: Building textures: LQ_Lightmap_1_1 (DXT1, 1024X1024)
+[2021.02.02-19.58.27:562][ 23]LogTexture: Display: Building textures: HQ_Lightmap1_2 (AutoDXT, 128X128)
+[2021.02.02-19.58.27:562][ 23]LogTexture: Display: Building textures: LQ_Lightmap_1_2 (DXT1, 128X128)
+[2021.02.02-19.58.27:562][ 23]LogTexture: Display: Building textures: HQ_Lightmap1_3 (AutoDXT, 64X64)
+[2021.02.02-19.58.27:562][ 23]LogTexture: Display: Building textures: LQ_Lightmap_1_3 (DXT1, 64X64)
+[2021.02.02-19.58.27:632][ 23]LogTexture: Display: Building textures: ShadowMapTexture2D_31 (G8, 32X32)
+[2021.02.02-19.58.27:632][ 23]LogTexture: Display: Building textures: ShadowMapTexture2D_30 (G8, 256X32)
+[2021.02.02-19.58.27:632][ 23]LogTexture: Display: Building textures: ShadowMapTexture2D_29 (BGRA8, 1024X256)
+[2021.02.02-19.58.27:632][ 23]LogStaticLightingSystem: Minimal_Default_BuiltData storing lightmap data for 53 meshes in 3 LightmapResourceClusters (17.7 Meshes per cluster).
+[2021.02.02-19.58.27:642][ 23]Lightmass on DESKTOP-OGQH2TG: 12.0 sec total, 161 ms importing, 39 ms setup, 485 ms photons, 11.3 sec processing, 0 ms extra exporting [53/53 mappings]. Threads: 2:05 min total, 1:25 min processing.
+[2021.02.02-19.58.27:666][ 23]LogUObjectHash: Compacting FUObjectHashTables data took   1.49ms
+[2021.02.02-19.58.27:706][ 23]LogStaticLightingSystem: Illumination: 17.9 sec (277 ms encoding lightmaps, 50 ms encoding shadowmaps)
+[2021.02.02-19.58.27:706][ 23]LogStaticLightingSystem: Lightmap texture memory:  2.3 MB (2.3 MB streaming, 0.0 MB non-streaming), 6 textures
+[2021.02.02-19.58.27:706][ 23]LogStaticLightingSystem: Shadowmap texture memory: 1.5 MB (1.5 MB streaming, 0.0 MB non-streaming), 3 textures
+[2021.02.02-19.58.28:213][ 23]DumpUnbuiltLightIteractions
+[2021.02.02-19.58.28:213][ 23]Lights with unbuilt interactions: 0
+[2021.02.02-19.58.28:213][ 23]
+[2021.02.02-19.58.28:213][ 23]Primitives with unbuilt interactions: 0
+[2021.02.02-19.58.28:308][ 24]Cmd: MAP CHECK NOTIFYRESULTS
+[2021.02.02-19.58.28:309][ 24]MapCheck: New page: Minimal_Default - Feb 2, 2021, 9:58:28 AM
+[2021.02.02-19.58.28:310][ 24]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 1.387ms to complete.
+[2021.02.02-19.58.45:134][774]LogUObjectHash: Compacting FUObjectHashTables data took   0.58ms
+[2021.02.02-19.58.45:230][774]LogSavePackage: Moving '../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Minimal_Default_Auto6FD6E80F0491A1DD0651074B89A072125.tmp' to '../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Autosaves/Game/StarterContent/Maps/Minimal_Default_Auto6.umap'
+[2021.02.02-19.58.45:239][774]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.136
+[2021.02.02-19.58.45:239][774]LogFileHelpers: Editor autosave (incl. sublevels) for all levels took 0.136
