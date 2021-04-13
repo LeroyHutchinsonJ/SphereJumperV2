@@ -1,8 +1,8 @@
-﻿Log file open, 03/02/21 13:41:49
+﻿Log file open, 04/13/21 14:09:25
 LogInit: Display: Running engine for game: SphereJumper
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 35 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.202152
+LogStats: Stats thread started at 0.356447
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: -5:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -139,7 +139,7 @@ LogInit: Build: ++UE4+Release-4.25-CL-14469661
 LogInit: Engine Version: 4.25.4-14469661+++UE4+Release-4.25
 LogInit: Compatible Engine Version: 4.25.0-13144385+++UE4+Release-4.25
 LogInit: Net CL: 13144385
-LogInit: OS: Windows 10 (Release 1909) (), CPU: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz, GPU: NVIDIA GeForce GTX 1070 Ti
+LogInit: OS: Windows 10 (Release 2009) (), CPU: Intel(R) Core(TM) i7-6850K CPU @ 3.60GHz, GPU: NVIDIA GeForce GTX 1070 Ti
 LogInit: Compiled (64-bit): Oct 11 2020 08:10:49
 LogInit: Compiled with Visual C++: 19.24.28315.00
 LogInit: Build Configuration: Development
@@ -194,760 +194,882 @@ LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:1]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[r.RayTracing:0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
-[2021.03.02-18.41.50:143][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2021.03.02-18.41.50:143][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
-[2021.03.02-18.41.50:143][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
-[2021.03.02-18.41.50:147][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2021.03.02-18.41.50:147][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2021.03.02-18.41.50:148][  0]LogInit: Selected Device Profile: [Windows]
-[2021.03.02-18.41.50:148][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2021.03.02-18.41.50:148][  0]LogHAL: Display: Platform has ~ 16 GB [17096511488 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2021.03.02-18.41.50:148][  0]LogInit: Going up to parent DeviceProfile []
-[2021.03.02-18.41.50:148][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2021.03.02-18.41.50:148][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
-[2021.03.02-18.41.50:149][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
-[2021.03.02-18.41.50:149][  0]LogInit: Computer: DESKTOP-OGQH2TG
-[2021.03.02-18.41.50:149][  0]LogInit: User: lhutc
-[2021.03.02-18.41.50:149][  0]LogInit: CPU Page size=4096, Cores=6
-[2021.03.02-18.41.50:150][  0]LogInit: High frequency timer resolution =10.000000 MHz
-[2021.03.02-18.41.50:150][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
-[2021.03.02-18.41.50:150][  0]LogMemory: Platform Memory Stats for Windows
-[2021.03.02-18.41.50:150][  0]LogMemory: Process Physical Memory: 114.92 MB used, 114.93 MB peak
-[2021.03.02-18.41.50:150][  0]LogMemory: Process Virtual Memory: 105.30 MB used, 105.30 MB peak
-[2021.03.02-18.41.50:150][  0]LogMemory: Physical Memory: 7067.54 MB used,  9236.96 MB free, 16304.50 MB total
-[2021.03.02-18.41.50:150][  0]LogMemory: Virtual Memory: 5173.11 MB used,  134212552.00 MB free, 134217728.00 MB total
-[2021.03.02-18.41.50:154][  0]LogWindows: WindowsPlatformFeatures enabled
-[2021.03.02-18.41.50:200][  0]LogInit: Physics initialised using underlying interface: PhysX
-[2021.03.02-18.41.50:201][  0]LogInit: Using OS detected language (en-US).
-[2021.03.02-18.41.50:201][  0]LogInit: Using OS detected locale (en-US).
-[2021.03.02-18.41.50:204][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2021.03.02-18.41.50:370][  0]LogInit: Setting process to per monitor DPI aware
-[2021.03.02-18.41.50:410][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2021.03.02-18.41.50:410][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2021.03.02-18.41.50:556][  0]LogD3D12RHI: Aftermath initialized
-[2021.03.02-18.41.50:556][  0]LogD3D12RHI: Loading WinPixEventRuntime.dll for PIX profiling (from ../../../Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64).
-[2021.03.02-18.41.50:563][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2021.03.02-18.41.52:152][  0]LogD3D12RHI: Found D3D12 adapter 0: NVIDIA GeForce GTX 1070 Ti (Max supported Feature Level 12_1)
-[2021.03.02-18.41.52:152][  0]LogD3D12RHI: Adapter has 8079MB of dedicated video memory, 0MB of dedicated system memory, and 8152MB of shared system memory, 1 output[s]
-[2021.03.02-18.41.52:603][  0]LogD3D12RHI: Found D3D12 adapter 1: Microsoft Basic Render Driver (Max supported Feature Level 12_1)
-[2021.03.02-18.41.52:603][  0]LogD3D12RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8152MB of shared system memory, 0 output[s]
-[2021.03.02-18.41.52:603][  0]LogD3D12RHI: Forcing D3D12.AsyncDeferredDeletion=0 as a workaround for a deadlock.
-[2021.03.02-18.41.52:603][  0]LogD3D12RHI: Chosen D3D12 Adapter Id = 0
-[2021.03.02-18.41.52:609][  0]LogD3D12RHI: Emitting draw events for PIX profiling.
-[2021.03.02-18.41.52:700][  0]LogD3D12RHI: The system supports ID3D12Device1.
-[2021.03.02-18.41.52:700][  0]LogD3D12RHI: The system supports ID3D12Device2.
-[2021.03.02-18.41.52:982][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for 3D Queue 0
-[2021.03.02-18.41.52:990][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for Copy Queue 0
-[2021.03.02-18.41.53:005][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for Compute Queue 0
-[2021.03.02-18.41.53:096][  0]LogD3D12RHI: Display: Not using pipeline state disk cache per r.D3D12.PSO.DiskCache=0
-[2021.03.02-18.41.53:096][  0]LogD3D12RHI: Display: Not using driver-optimized pipeline state disk cache per r.D3D12.PSO.DriverOptimizedDiskCache=0
-[2021.03.02-18.41.53:140][  0]LogD3D12RHI:     GPU DeviceId: 0x1b82 (for the marketing name, search the web for "GPU Device Id")
-[2021.03.02-18.41.53:140][  0]LogWindows: EnumDisplayDevices:
-[2021.03.02-18.41.53:140][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070 Ti' (P:1 D:1)
-[2021.03.02-18.41.53:140][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070 Ti' (P:0 D:0)
-[2021.03.02-18.41.53:141][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070 Ti' (P:0 D:0)
-[2021.03.02-18.41.53:141][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070 Ti' (P:0 D:0)
-[2021.03.02-18.41.53:141][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2021.03.02-18.41.53:141][  0]LogD3D12RHI:     Adapter Name: NVIDIA GeForce GTX 1070 Ti
-[2021.03.02-18.41.53:141][  0]LogD3D12RHI:   Driver Version: 456.71 (internal:27.21.14.5671, unified:456.71)
-[2021.03.02-18.41.53:141][  0]LogD3D12RHI:      Driver Date: 9-30-2020
-[2021.03.02-18.41.53:141][  0]LogRHI: Texture pool is 4326 MB (70% of 6180 MB)
-[2021.03.02-18.41.53:141][  0]LogD3D12RHI: Async texture creation enabled
-[2021.03.02-18.41.53:141][  0]LogD3D12RHI: RHI has support for 64 bit atomics
-[2021.03.02-18.41.53:432][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
-[2021.03.02-18.41.53:453][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
-[2021.03.02-18.41.53:453][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
-[2021.03.02-18.41.53:453][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
-[2021.03.02-18.41.53:453][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
-[2021.03.02-18.41.53:453][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
-[2021.03.02-18.41.53:453][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
-[2021.03.02-18.41.53:453][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
-[2021.03.02-18.41.53:453][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
-[2021.03.02-18.41.53:453][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
-[2021.03.02-18.41.53:453][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
-[2021.03.02-18.41.53:475][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
-[2021.03.02-18.41.53:475][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
-[2021.03.02-18.41.53:485][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
-[2021.03.02-18.41.53:495][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
-[2021.03.02-18.41.53:503][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
-[2021.03.02-18.41.53:512][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
-[2021.03.02-18.41.53:521][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
-[2021.03.02-18.41.53:530][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
-[2021.03.02-18.41.53:539][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
-[2021.03.02-18.41.53:566][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
-[2021.03.02-18.41.53:566][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
-[2021.03.02-18.41.53:581][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
-[2021.03.02-18.41.53:581][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
-[2021.03.02-18.41.53:590][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
-[2021.03.02-18.41.53:600][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
-[2021.03.02-18.41.53:609][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
-[2021.03.02-18.41.53:618][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
-[2021.03.02-18.41.53:618][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2021.03.02-18.41.53:625][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2021.03.02-18.41.53:674][  0]LogShaderCompilers: Guid format shader working directory is -81 characters bigger than the processId version (../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Intermediate/Shaders/WorkingDirectory/12164/).
-[2021.03.02-18.41.53:674][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/lhutc/AppData/Local/Temp/UnrealShaderWorkingDir/A21F14EB4783FEBE89237C95A0663CB3/'.
-[2021.03.02-18.41.53:674][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2021.03.02-18.41.53:674][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2021.03.02-18.41.53:674][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2021.03.02-18.41.54:453][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2021.03.02-18.41.54:520][  0]LogDerivedDataCache: Loaded boot cache 0.07s 85MB C:/Users/lhutc/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2021.03.02-18.41.54:520][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/lhutc/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
-[2021.03.02-18.41.54:520][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2021.03.02-18.41.54:520][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2021.03.02-18.41.54:520][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2021.03.02-18.41.54:520][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2021.03.02-18.41.54:530][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2021.03.02-18.41.54:530][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2021.03.02-18.41.54:530][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2021.03.02-18.41.54:531][  0]LogDerivedDataCache: Using Local data cache path C:/Users/lhutc/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2021.03.02-18.41.54:531][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2021.03.02-18.41.54:531][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2021.03.02-18.41.54:585][  0]LogSlate: Using FreeType 2.10.0
-[2021.03.02-18.41.54:585][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2021.03.02-18.41.54:618][  0]LogAssetRegistry: FAssetRegistry took 0.0025 seconds to start up
-[2021.03.02-18.41.54:848][  0]LogInit: Selected Device Profile: [Windows]
-[2021.03.02-18.41.54:990][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2021.03.02-18.41.54:990][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2021.03.02-18.41.54:990][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2021.03.02-18.41.54:990][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2021.03.02-18.41.54:990][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2021.03.02-18.41.55:004][  0]LogNetVersion: SphereJumper 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1491008675)
-[2021.03.02-18.41.55:664][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (00000272BA808540), frame # 0
-[2021.03.02-18.41.55:664][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000272BA63CA40), frame # 0
-[2021.03.02-18.41.55:667][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000272BA675E00), frame # 0
-[2021.03.02-18.41.55:749][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.071359 seconds
-[2021.03.02-18.41.55:754][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
-[2021.03.02-18.41.55:754][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
-[2021.03.02-18.41.55:754][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2021.03.02-18.41.56:073][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2021.03.02-18.41.56:077][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2021.03.02-18.41.56:149][  0]SourceControl: Source control is disabled
-[2021.03.02-18.41.56:149][  0]SourceControl: Source control is disabled
-[2021.03.02-18.41.56:151][  0]SourceControl: Source control is disabled
-[2021.03.02-18.41.56:154][  0]SourceControl: Source control is disabled
-[2021.03.02-18.41.56:160][  0]SourceControl: Source control is disabled
-[2021.03.02-18.41.56:384][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2021.03.02-18.41.56:401][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.03.02-18.41.56:401][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
-[2021.03.02-18.41.56:447][  0]LogOcInput: OculusInput pre-init called
-[2021.03.02-18.41.56:457][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
-[2021.03.02-18.41.56:458][  0]LogWindows: File 'OVRPlugin.dll' does not exist
-[2021.03.02-18.41.56:524][  0]LogEngine: Initializing Engine...
-[2021.03.02-18.41.56:526][  0]LogHMD: Failed to initialize OpenVR with code 110
-[2021.03.02-18.41.56:526][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
-[2021.03.02-18.41.56:527][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2021.03.02-18.41.56:718][  0]LogInit: Initializing FReadOnlyCVARCache
-[2021.03.02-18.41.56:730][  0]LogAIModule: Creating AISystem for world Untitled
-[2021.03.02-18.41.56:730][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000272C31FFC00), frame # 0
-[2021.03.02-18.41.56:730][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000272C3271940), frame # 0
-[2021.03.02-18.41.56:742][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.03.02-18.41.56:742][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.03.02-18.41.56:742][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.03.02-18.41.56:742][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.03.02-18.41.56:742][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.03.02-18.41.56:742][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.03.02-18.41.56:742][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.03.02-18.41.56:742][  0]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.03.02-18.41.56:742][  0]LogAudio: Display: Using built-in audio occlusion.
-[2021.03.02-18.41.56:742][  0]LogAudioMixer: Display: Initializing audio mixer.
-[2021.03.02-18.41.56:756][  0]LogAudioMixer: Display: 0: FrontLeft
-[2021.03.02-18.41.56:756][  0]LogAudioMixer: Display: 1: FrontRight
-[2021.03.02-18.41.56:798][  0]LogAudioMixer: Display: Using Audio Device Headphones (3- Head Boss Stereo)
-[2021.03.02-18.41.56:801][  0]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.03.02-18.41.56:803][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.03.02-18.41.56:803][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.03.02-18.41.56:804][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.03.02-18.41.56:806][  0]LogInit: FAudioDevice initialized.
-[2021.03.02-18.41.56:806][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2021.03.02-18.41.57:030][  0]LogDerivedDataCache: Saved boot cache 0.22s 85MB C:/Users/lhutc/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
-[2021.03.02-18.41.57:035][  0]LogInit: Texture streaming: Enabled
-[2021.03.02-18.41.57:052][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2021.03.02-18.41.57:052][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
-[2021.03.02-18.41.57:053][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
-[2021.03.02-18.41.57:115][  0]LogInit: Transaction tracking system initialized
-[2021.03.02-18.41.57:134][  0]BlueprintLog: New page: Editor Load
-[2021.03.02-18.41.57:209][  0]LocalizationService: Localization service is disabled
-[2021.03.02-18.41.57:480][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2021.03.02-18.41.57:480][  0]LogCook: Display: Mobile HDR setting 1
-[2021.03.02-18.41.57:645][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Content/' took 0.01s
-[2021.03.02-18.41.57:865][  0]SourceControl: Source control is disabled
-[2021.03.02-18.41.57:865][  0]LogUnrealEdMisc: Loading editor; pre map load, took 9.605
-[2021.03.02-18.41.58:256][  0]LightingResults: New page: Lighting Build
-[2021.03.02-18.41.58:257][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.41.58:257][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.41.58:257][  0]MapCheck: New page: Map Check
-[2021.03.02-18.41.58:257][  0]LightingResults: New page: Lighting Build
-[2021.03.02-18.41.58:269][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000272C31FFC00), frame # 0
-[2021.03.02-18.41.58:269][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000272C3271940), frame # 0
-[2021.03.02-18.41.58:270][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.69ms
-[2021.03.02-18.42.01:024][  0]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.02-18.42.01:024][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000272AECA7E00), frame # 0
-[2021.03.02-18.42.01:024][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000272C3428F40), frame # 0
-[2021.03.02-18.42.01:220][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2021.03.02-18.42.01:282][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.84ms
-[2021.03.02-18.42.01:283][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2021.03.02-18.42.01:283][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.159ms to complete.
-[2021.03.02-18.42.01:283][  0]LogFileHelpers: Loading map 'Minimal_Default' took 3.418
-[2021.03.02-18.42.01:301][  0]LogUnrealEdMisc: Total Editor Startup Time, took 13.042
-[2021.03.02-18.42.02:191][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.02-18.42.02:201][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.02-18.42.02:210][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.02-18.42.02:217][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.02-18.42.02:324][  0]LogCollectionManager: Loaded 0 collections in 0.002369 seconds
-[2021.03.02-18.42.02:440][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Collections/' took 0.00s
-[2021.03.02-18.42.02:440][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Content/Developers/lhutc/Collections/' took 0.00s
-[2021.03.02-18.42.02:440][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Content/Collections/' took 0.00s
-[2021.03.02-18.42.02:440][  0]LogContentBrowser: Native class hierarchy populated in 0.0097 seconds. Added 3427 classes and 821 folders.
-[2021.03.02-18.42.02:532][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0006 seconds. Added 0 classes and 0 folders.
-[2021.03.02-18.42.04:006][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2021.03.02-18.42.04:027][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 2 classes and 0 folders.
-[2021.03.02-18.42.04:955][  0]LogSlate: Took 0.000165 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2021.03.02-18.42.04:957][  0]LogSlate: Took 0.000136 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2021.03.02-18.42.05:021][  0]LogSlate: Took 0.017041 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2021.03.02-18.42.05:533][  0]LogRenderer: Reallocating scene render targets to support 1164x944 Format 10 NumSamples 1 (Frame:1).
-[2021.03.02-18.42.06:716][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2021.03.02-18.42.06:716][  0]LogLoad: (Engine Initialization) Total time: 18.46 seconds
-[2021.03.02-18.42.06:716][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2021.03.02-18.42.06:869][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2021.03.02-18.42.06:973][  1]LogAssetRegistry: Asset discovery search completed in 12.3564 seconds
-[2021.03.02-18.42.06:978][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000004 seconds (updated 0 objects)
-[2021.03.02-18.43.31:852][990]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere7)
-[2021.03.02-18.44.13:976][563]LogSlate: Took 0.027485 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2021.03.02-18.44.13:991][563]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/GameUI.GameUI
-[2021.03.02-18.44.15:186][563]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0011 seconds. Added 125 classes and 0 folders.
-[2021.03.02-18.44.17:505][563]LogSlate: Took 0.000216 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2021.03.02-18.44.55:917][600]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Player.Player
-[2021.03.02-18.44.56:783][601]LogSlate: Took 0.027371 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2021.03.02-18.45.56:783][984]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.45.56:784][984]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.49.10:128][505]BlueprintLog: New page: Compile GameUI
-[2021.03.02-18.49.10:207][505]LogUObjectHash: Compacting FUObjectHashTables data took   4.32ms
-[2021.03.02-18.49.20:047][458]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Player.Player
-[2021.03.02-18.51.24:453][656]BlueprintLog: New page: Compile Player
-[2021.03.02-18.51.24:539][656]LogUObjectHash: Compacting FUObjectHashTables data took   3.93ms
-[2021.03.02-18.51.24:630][656]LogSlate: Took 0.020671 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
-[2021.03.02-18.51.25:689][778]LogRenderer: Reallocating scene render targets to support 1164x964 Format 10 NumSamples 1 (Frame:1).
-[2021.03.02-18.53.33:740][672]LogUObjectHash: Compacting FUObjectHashTables data took   4.09ms
-[2021.03.02-18.53.33:744][672]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.038
-[2021.03.02-18.53.33:752][672]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/Player] ([1] browsable assets)...
-[2021.03.02-18.53.33:765][672]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/Player.Player]
-[2021.03.02-18.53.33:765][672]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Player]
-[2021.03.02-18.53.33:872][672]LogSavePackage: Moving '../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Player_Auto1EFB62C5148096E9277E0AEB029AD31C9.tmp' to '../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Autosaves/Game/Blueprints/Player_Auto1.uasset'
-[2021.03.02-18.53.33:913][672]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Blueprints/GameUI] ([1] browsable assets)...
-[2021.03.02-18.53.33:914][672]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/GameUI]
-[2021.03.02-18.53.33:952][672]LogSavePackage: Moving '../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/GameUI_Auto1764FB8314A8C54E94C1840941288200B.tmp' to '../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Autosaves/Game/Blueprints/GameUI_Auto1.uasset'
-[2021.03.02-18.53.33:952][672]LogFileHelpers: Auto-saving content packages took 0.208
-[2021.03.02-18.53.40:275][113]BlueprintLog: New page: Compile Player
-[2021.03.02-18.53.40:332][113]LogUObjectHash: Compacting FUObjectHashTables data took   2.83ms
-[2021.03.02-18.56.23:247][564]LogTemp: Repeating last play command: Selected Viewport
-[2021.03.02-18.56.23:314][564]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2021.03.02-18.56.23:348][564]PIE: New page: PIE session: Minimal_Default (Mar 2, 2021, 8:56:23 AM)
-[2021.03.02-18.56.23:398][564]LogOnline: OSS: Creating online subsystem instance for: NULL
-[2021.03.02-18.56.23:400][564]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
-[2021.03.02-18.56.23:416][564]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.56.23:423][564]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007106s)
-[2021.03.02-18.56.23:424][564]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.02-18.56.23:424][564]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002730A841C00), frame # 72564
-[2021.03.02-18.56.23:424][564]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000272EA576700), frame # 72564
-[2021.03.02-18.56.23:444][564]LogPlayLevel: PIE: World Init took: (0.001192s)
-[2021.03.02-18.56.23:444][564]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.027833s)
-[2021.03.02-18.56.23:486][564]LogUObjectHash: Compacting FUObjectHashTables data took   3.97ms
-[2021.03.02-18.56.23:488][564]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.03.02-18.56.23:488][564]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.03.02-18.56.23:488][564]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.03.02-18.56.23:488][564]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.03.02-18.56.23:488][564]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.03.02-18.56.23:488][564]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.03.02-18.56.23:488][564]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.03.02-18.56.23:488][564]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.03.02-18.56.23:489][564]LogAudio: Display: Using built-in audio occlusion.
-[2021.03.02-18.56.23:489][564]LogAudioMixer: Display: Initializing audio mixer.
-[2021.03.02-18.56.23:494][564]LogAudioMixer: Display: 0: FrontLeft
-[2021.03.02-18.56.23:494][564]LogAudioMixer: Display: 1: FrontRight
-[2021.03.02-18.56.23:513][564]LogAudioMixer: Display: Using Audio Device Headphones (3- Head Boss Stereo)
-[2021.03.02-18.56.23:513][564]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.03.02-18.56.23:513][564]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.03.02-18.56.23:513][564]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.03.02-18.56.23:514][564]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.03.02-18.56.23:531][564]LogInit: FAudioDevice initialized.
-[2021.03.02-18.56.23:579][564]LogLoad: Game class is 'MyGameMode_C'
-[2021.03.02-18.56.23:582][564]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.03.02-13.56.23
-[2021.03.02-18.56.23:582][564]LogWorld: Bringing up level for play took: 0.002077
-[2021.03.02-18.56.23:582][564]LogOnline: OSS: Creating online subsystem instance for: :Context_10
-[2021.03.02-18.56.23:608][564]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0005 seconds. Added 20 classes and 0 folders.
-[2021.03.02-18.56.23:655][564]PIE: Server logged in
-[2021.03.02-18.56.23:656][564]PIE: Play in editor total start time 0.386 seconds.
-[2021.03.02-18.56.39:658][390]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.56.39:658][390]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.56.39:658][390]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.56.39:658][390]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.56.39:659][390]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.56.39:777][390]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000272EA576700), frame # 74390
-[2021.03.02-18.56.39:777][390]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002730A841C00), frame # 74390
-[2021.03.02-18.56.39:804][390]LogUObjectHash: Compacting FUObjectHashTables data took   4.82ms
-[2021.03.02-18.56.39:805][390]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.56.39:814][390]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007176s)
-[2021.03.02-18.56.39:815][390]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.02-18.56.39:815][390]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000027349775600), frame # 74390
-[2021.03.02-18.56.39:815][390]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002734BE88E00), frame # 74390
-[2021.03.02-18.56.39:815][390]LogPlayLevel: PIE: World Init took: (0.001050s)
-[2021.03.02-18.56.39:815][390]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.009740s)
-[2021.03.02-18.56.39:815][390]LogLoad: Game class is 'MyGameMode_C'
-[2021.03.02-18.56.39:817][390]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.03.02-13.56.39
-[2021.03.02-18.56.39:817][390]LogWorld: Bringing up level for play took: 0.001076
-[2021.03.02-18.56.39:819][390]LogLoad: Took 0.161550 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
-[2021.03.02-18.56.45:289][ 42]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.56.45:289][ 42]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.56.45:289][ 42]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.56.45:290][ 42]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.56.45:290][ 42]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.56.45:378][ 42]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002734BE88E00), frame # 75042
-[2021.03.02-18.56.45:378][ 42]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000027349775600), frame # 75042
-[2021.03.02-18.56.45:385][ 42]LogUObjectHash: Compacting FUObjectHashTables data took   4.01ms
-[2021.03.02-18.56.45:386][ 42]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.56.45:393][ 42]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006153s)
-[2021.03.02-18.56.45:393][ 42]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.02-18.56.45:394][ 42]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002734AC21200), frame # 75042
-[2021.03.02-18.56.45:394][ 42]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000027347C0A0C0), frame # 75042
-[2021.03.02-18.56.45:394][ 42]LogPlayLevel: PIE: World Init took: (0.001008s)
-[2021.03.02-18.56.45:394][ 42]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007290s)
-[2021.03.02-18.56.45:394][ 42]LogLoad: Game class is 'MyGameMode_C'
-[2021.03.02-18.56.45:395][ 42]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.03.02-13.56.45
-[2021.03.02-18.56.45:395][ 42]LogWorld: Bringing up level for play took: 0.001069
-[2021.03.02-18.56.45:397][ 42]LogLoad: Took 0.107603 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
-[2021.03.02-18.56.50:929][702]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.56.50:929][702]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.56.50:929][702]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.56.50:929][702]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.56.50:930][702]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.56.51:008][702]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000027347C0A0C0), frame # 75702
-[2021.03.02-18.56.51:008][702]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002734AC21200), frame # 75702
-[2021.03.02-18.56.51:011][702]LogUObjectHash: Compacting FUObjectHashTables data took   3.46ms
-[2021.03.02-18.56.51:014][702]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.56.51:021][702]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007309s)
-[2021.03.02-18.56.51:022][702]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.02-18.56.51:022][702]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002734AC20A00), frame # 75702
-[2021.03.02-18.56.51:022][702]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000027347C0B4C0), frame # 75702
-[2021.03.02-18.56.51:022][702]LogPlayLevel: PIE: World Init took: (0.001049s)
-[2021.03.02-18.56.51:022][702]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.008500s)
-[2021.03.02-18.56.51:022][702]LogLoad: Game class is 'MyGameMode_C'
-[2021.03.02-18.56.51:023][702]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.03.02-13.56.51
-[2021.03.02-18.56.51:024][702]LogWorld: Bringing up level for play took: 0.001094
-[2021.03.02-18.56.51:025][702]LogLoad: Took 0.095890 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
-[2021.03.02-18.57.07:354][656]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.57.07:354][656]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.57.07:354][656]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.57.07:355][656]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.57.07:355][656]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.57.07:439][656]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000027347C0B4C0), frame # 77656
-[2021.03.02-18.57.07:439][656]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002734AC20A00), frame # 77656
-[2021.03.02-18.57.07:442][656]LogUObjectHash: Compacting FUObjectHashTables data took   3.01ms
-[2021.03.02-18.57.07:444][656]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.57.07:450][656]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006219s)
-[2021.03.02-18.57.07:451][656]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.02-18.57.07:451][656]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002734AC23000), frame # 77656
-[2021.03.02-18.57.07:452][656]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002734BE8AAC0), frame # 77656
-[2021.03.02-18.57.07:452][656]LogPlayLevel: PIE: World Init took: (0.001156s)
-[2021.03.02-18.57.07:452][656]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007500s)
-[2021.03.02-18.57.07:452][656]LogLoad: Game class is 'MyGameMode_C'
-[2021.03.02-18.57.07:453][656]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.03.02-13.57.07
-[2021.03.02-18.57.07:453][656]LogWorld: Bringing up level for play took: 0.001073
-[2021.03.02-18.57.07:455][656]LogLoad: Took 0.100510 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
-[2021.03.02-18.57.27:793][ 87]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.57.27:793][ 87]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.57.27:793][ 87]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.57.27:793][ 87]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.57.27:793][ 87]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.57.27:870][ 87]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002734BE8AAC0), frame # 80087
-[2021.03.02-18.57.27:871][ 87]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002734AC23000), frame # 80087
-[2021.03.02-18.57.27:874][ 87]LogUObjectHash: Compacting FUObjectHashTables data took   3.07ms
-[2021.03.02-18.57.27:876][ 87]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.57.27:882][ 87]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006261s)
-[2021.03.02-18.57.27:883][ 87]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.02-18.57.27:883][ 87]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000273481D8200), frame # 80087
-[2021.03.02-18.57.27:883][ 87]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000027347B9E480), frame # 80087
-[2021.03.02-18.57.27:883][ 87]LogPlayLevel: PIE: World Init took: (0.001013s)
-[2021.03.02-18.57.27:883][ 87]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007406s)
-[2021.03.02-18.57.27:883][ 87]LogLoad: Game class is 'MyGameMode_C'
-[2021.03.02-18.57.27:885][ 87]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.03.02-13.57.27
-[2021.03.02-18.57.27:885][ 87]LogWorld: Bringing up level for play took: 0.001080
-[2021.03.02-18.57.27:887][ 87]LogLoad: Took 0.094060 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
-[2021.03.02-18.57.30:676][418]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.57.30:676][418]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.57.30:676][418]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.57.30:676][418]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.57.30:677][418]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.57.30:746][418]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000027347B9E480), frame # 80418
-[2021.03.02-18.57.30:746][418]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000273481D8200), frame # 80418
-[2021.03.02-18.57.30:750][418]LogUObjectHash: Compacting FUObjectHashTables data took   4.07ms
-[2021.03.02-18.57.30:751][418]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.57.30:759][418]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007509s)
-[2021.03.02-18.57.30:760][418]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.02-18.57.30:760][418]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000027348D44A00), frame # 80418
-[2021.03.02-18.57.30:760][418]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000027347C09F80), frame # 80418
-[2021.03.02-18.57.30:760][418]LogPlayLevel: PIE: World Init took: (0.001018s)
-[2021.03.02-18.57.30:760][418]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.008678s)
-[2021.03.02-18.57.30:760][418]LogLoad: Game class is 'MyGameMode_C'
-[2021.03.02-18.57.30:762][418]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.03.02-13.57.30
-[2021.03.02-18.57.30:762][418]LogWorld: Bringing up level for play took: 0.001087
-[2021.03.02-18.57.30:763][418]LogLoad: Took 0.087708 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
-[2021.03.02-18.57.31:570][509]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.02-18.57.31:570][509]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.57.31:570][509]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.57.31:571][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.57.31:577][509]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2021.03.02-18.57.31:583][509]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.57.31:613][509]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.02-18.57.31:631][509]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000027347C09F80), frame # 80509
-[2021.03.02-18.57.31:631][509]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000027348D44A00), frame # 80509
-[2021.03.02-18.57.31:635][509]LogUObjectHash: Compacting FUObjectHashTables data took   3.23ms
-[2021.03.02-18.57.31:675][510]LogPlayLevel: Display: Destroying online subsystem :Context_10
-[2021.03.02-18.57.36:095][ 20]LogEditorViewport: Clicking on Actor (LMB): Gem_C (Gem3)
-[2021.03.02-18.57.40:598][536]LogEditorViewport: Clicking on Actor (LMB): WaterDetection_C (WaterDetection)
-[2021.03.02-18.57.44:083][896]LogEditorViewport: Clicking on Actor (LMB): Gem_C (Gem2)
-[2021.03.02-18.57.47:605][266]LogEditorViewport: Clicking on Actor (LMB): Gem_C (Gem)
-[2021.03.02-18.57.49:737][504]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere7)
-[2021.03.02-18.57.53:225][861]LogTemp: Repeating last play command: Selected Viewport
-[2021.03.02-18.57.53:250][861]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2021.03.02-18.57.53:250][861]PIE: New page: PIE session: Minimal_Default (Mar 2, 2021, 8:57:53 AM)
-[2021.03.02-18.57.53:251][861]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.57.53:257][861]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006691s)
-[2021.03.02-18.57.53:258][861]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.02-18.57.53:258][861]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000027352290200), frame # 82861
-[2021.03.02-18.57.53:258][861]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002734C56B740), frame # 82861
-[2021.03.02-18.57.53:258][861]LogPlayLevel: PIE: World Init took: (0.001105s)
-[2021.03.02-18.57.53:258][861]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007935s)
-[2021.03.02-18.57.53:290][861]LogUObjectHash: Compacting FUObjectHashTables data took   3.09ms
-[2021.03.02-18.57.53:293][861]LogAudioMixer: Display: Audio Mixer Platform Settings:
-[2021.03.02-18.57.53:293][861]LogAudioMixer: Display: 	Sample Rate:						  48000
-[2021.03.02-18.57.53:293][861]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
-[2021.03.02-18.57.53:293][861]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
-[2021.03.02-18.57.53:293][861]LogAudioMixer: Display: 	Number of buffers to queue:			  2
-[2021.03.02-18.57.53:293][861]LogAudioMixer: Display: 	Max Channels (voices):				  32
-[2021.03.02-18.57.53:293][861]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
-[2021.03.02-18.57.53:294][861]LogAudio: Display: AudioDevice MaxSources: 32
-[2021.03.02-18.57.53:294][861]LogAudio: Display: Using built-in audio occlusion.
-[2021.03.02-18.57.53:294][861]LogAudioMixer: Display: Initializing audio mixer.
-[2021.03.02-18.57.53:299][861]LogAudioMixer: Display: 0: FrontLeft
-[2021.03.02-18.57.53:299][861]LogAudioMixer: Display: 1: FrontRight
-[2021.03.02-18.57.53:316][861]LogAudioMixer: Display: Using Audio Device Headphones (3- Head Boss Stereo)
-[2021.03.02-18.57.53:316][861]LogAudioMixer: Display: Initializing Sound Submixes...
-[2021.03.02-18.57.53:316][861]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
-[2021.03.02-18.57.53:316][861]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
-[2021.03.02-18.57.53:317][861]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
-[2021.03.02-18.57.53:330][861]LogInit: FAudioDevice initialized.
-[2021.03.02-18.57.53:335][861]LogLoad: Game class is 'MyGameMode_C'
-[2021.03.02-18.57.53:338][861]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.03.02-13.57.53
-[2021.03.02-18.57.53:339][861]LogWorld: Bringing up level for play took: 0.002177
-[2021.03.02-18.57.53:339][861]LogOnline: OSS: Creating online subsystem instance for: :Context_13
-[2021.03.02-18.57.53:341][861]PIE: Server logged in
-[2021.03.02-18.57.53:342][861]PIE: Play in editor total start time 0.092 seconds.
-[2021.03.02-18.58.18:452][844]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.58.18:452][844]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.58.18:452][844]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.58.18:452][844]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.58.18:453][844]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.58.18:520][844]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002734C56B740), frame # 85844
-[2021.03.02-18.58.18:520][844]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000027352290200), frame # 85844
-[2021.03.02-18.58.18:523][844]LogUObjectHash: Compacting FUObjectHashTables data took   3.06ms
-[2021.03.02-18.58.18:526][844]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.58.18:532][844]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006478s)
-[2021.03.02-18.58.18:533][844]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.02-18.58.18:533][844]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000002734B3F6800), frame # 85844
-[2021.03.02-18.58.18:533][844]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002734C56AFC0), frame # 85844
-[2021.03.02-18.58.18:533][844]LogPlayLevel: PIE: World Init took: (0.001028s)
-[2021.03.02-18.58.18:534][844]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007641s)
-[2021.03.02-18.58.18:534][844]LogLoad: Game class is 'MyGameMode_C'
-[2021.03.02-18.58.18:535][844]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.03.02-13.58.18
-[2021.03.02-18.58.18:535][844]LogWorld: Bringing up level for play took: 0.001232
-[2021.03.02-18.58.18:537][844]LogLoad: Took 0.084856 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
-[2021.03.02-18.58.21:290][171]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.58.21:290][171]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.58.21:290][171]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.58.21:290][171]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.58.21:290][171]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.58.21:366][171]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002734C56AFC0), frame # 86171
-[2021.03.02-18.58.21:366][171]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000002734B3F6800), frame # 86171
-[2021.03.02-18.58.21:372][171]LogUObjectHash: Compacting FUObjectHashTables data took   6.16ms
-[2021.03.02-18.58.21:374][171]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.58.21:383][171]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009174s)
-[2021.03.02-18.58.21:384][171]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.02-18.58.21:384][171]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000272E7F3CE00), frame # 86171
-[2021.03.02-18.58.21:384][171]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000002734C7C4E00), frame # 86171
-[2021.03.02-18.58.21:385][171]LogPlayLevel: PIE: World Init took: (0.001037s)
-[2021.03.02-18.58.21:385][171]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.010374s)
-[2021.03.02-18.58.21:385][171]LogLoad: Game class is 'MyGameMode_C'
-[2021.03.02-18.58.21:386][171]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.03.02-13.58.21
-[2021.03.02-18.58.21:386][171]LogWorld: Bringing up level for play took: 0.001091
-[2021.03.02-18.58.21:388][171]LogLoad: Took 0.098901 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
-[2021.03.02-18.58.52:817][931]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.58.52:817][931]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
-[2021.03.02-18.58.52:817][931]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.58.52:817][931]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.58.52:818][931]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.58.52:885][931]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000002734C7C4E00), frame # 89931
-[2021.03.02-18.58.52:885][931]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000272E7F3CE00), frame # 89931
-[2021.03.02-18.58.52:889][931]LogUObjectHash: Compacting FUObjectHashTables data took   3.25ms
-[2021.03.02-18.58.52:891][931]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.58.52:897][931]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006307s)
-[2021.03.02-18.58.52:898][931]LogAIModule: Creating AISystem for world Minimal_Default
-[2021.03.02-18.58.52:898][931]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000272E7F3CC00), frame # 89931
-[2021.03.02-18.58.52:898][931]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000027347DCD580), frame # 89931
-[2021.03.02-18.58.52:899][931]LogPlayLevel: PIE: World Init took: (0.001133s)
-[2021.03.02-18.58.52:899][931]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007568s)
-[2021.03.02-18.58.52:899][931]LogLoad: Game class is 'MyGameMode_C'
-[2021.03.02-18.58.52:900][931]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.03.02-13.58.52
-[2021.03.02-18.58.52:900][931]LogWorld: Bringing up level for play took: 0.001165
-[2021.03.02-18.58.52:902][931]LogLoad: Took 0.084404 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
-[2021.03.02-18.59.42:879][906]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.02-18.59.42:879][906]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
-[2021.03.02-18.59.42:879][906]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
-[2021.03.02-18.59.42:880][906]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.59.42:889][906]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2021.03.02-18.59.42:897][906]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
-[2021.03.02-18.59.42:961][906]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2021.03.02-18.59.42:962][906]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000027347DCD580), frame # 95906
-[2021.03.02-18.59.42:962][906]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000272E7F3CC00), frame # 95906
-[2021.03.02-18.59.42:966][906]LogUObjectHash: Compacting FUObjectHashTables data took   3.28ms
-[2021.03.02-18.59.43:009][907]LogPlayLevel: Display: Destroying online subsystem :Context_13
+[2021.04.13-18.09.26:518][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2021.04.13-18.09.26:518][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2021.04.13-18.09.26:518][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
+[2021.04.13-18.09.26:518][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2021.04.13-18.09.26:518][  0]LogConfig: Setting CVar [[r.SkinCache.CompileShaders:1]]
+[2021.04.13-18.09.26:518][  0]LogConfig: Setting CVar [[r.RayTracing:0]]
+[2021.04.13-18.09.26:518][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
+[2021.04.13-18.09.26:518][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
+[2021.04.13-18.09.26:518][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2021.04.13-18.09.26:518][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2021.04.13-18.09.26:518][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[s.FlushStreamingOnExit:1]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:25165824]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2021.04.13-18.09.26:519][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
+[2021.04.13-18.09.26:519][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
+[2021.04.13-18.09.26:526][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:526][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.04.13-18.09.26:526][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.04.13-18.09.26:526][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:526][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.04.13-18.09.26:526][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.04.13-18.09.26:527][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.04.13-18.09.26:528][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.04.13-18.09.26:529][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.04.13-18.09.26:530][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.04.13-18.09.26:530][  0]LogInit: Selected Device Profile: [Windows]
+[2021.04.13-18.09.26:530][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2021.04.13-18.09.26:530][  0]LogHAL: Display: Platform has ~ 16 GB [17096511488 / 17179869184 / 16], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2021.04.13-18.09.26:530][  0]LogInit: Going up to parent DeviceProfile []
+[2021.04.13-18.09.26:531][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:4]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:4]]
+[2021.04.13-18.09.26:531][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:-1]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:2]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.LensFlareQuality:2]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:1]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.BloomQuality:5]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:100]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2021.04.13-18.09.26:532][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.VT.MaxAnisotropy:8]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:64]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SSR.Quality:3]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SSR.HalfResSceneColor:0]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SceneColorFormat:4]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:1]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:0]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SSGI.Quality:3]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.FastApplyOnOpaque:1 ; Always have FastSkyLUT 1 in this case to avoid wrong sky]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.SampleCountPerSlice:1]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.AerialPerspectiveLUT.DepthResolution:16.0]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT:1]]
+[2021.04.13-18.09.26:533][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMin:4.0]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.FastSkyLUT.SampleCountMax:32.0]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMin:4.0]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.SampleCountMax:32.0]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.UseSmallFormat:0]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.TransmittanceLUT.SampleCount:10.0]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.SkyAtmosphere.MultiScatteringLUT.SampleCount:15.0]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Applying CVar settings from Section [ShadingQuality@3] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Scalability.ini]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.SampleCount:16]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.HairStrands.SkyLighting.JitterIntegration:0]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.HairStrands.SkyAO.SampleCount:16]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.HairStrands.DeepShadow.SuperSampling:0]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.HairStrands.VisibilityPPLL:0]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.HairStrands.RasterizationScale:0.5]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Setting CVar [[r.HairStrands.VelocityRasterizationScale:1]]
+[2021.04.13-18.09.26:534][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2021.04.13-18.09.26:536][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2021.04.13-18.09.26:536][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2021.04.13-18.09.26:536][  0]LogConfig: Setting CVar [[fx.SkipVectorVMBackendOptimizations:1]]
+[2021.04.13-18.09.26:536][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Config/Windows/Engine.ini]
+[2021.04.13-18.09.26:536][  0]LogInit: Computer: DESKTOP-OGQH2TG
+[2021.04.13-18.09.26:536][  0]LogInit: User: lhutc
+[2021.04.13-18.09.26:536][  0]LogInit: CPU Page size=4096, Cores=6
+[2021.04.13-18.09.26:536][  0]LogInit: High frequency timer resolution =10.000000 MHz
+[2021.04.13-18.09.26:537][  0]LogMemory: Memory total: Physical=15.9GB (16GB approx)
+[2021.04.13-18.09.26:537][  0]LogMemory: Platform Memory Stats for Windows
+[2021.04.13-18.09.26:537][  0]LogMemory: Process Physical Memory: 115.87 MB used, 115.87 MB peak
+[2021.04.13-18.09.26:537][  0]LogMemory: Process Virtual Memory: 105.22 MB used, 105.22 MB peak
+[2021.04.13-18.09.26:537][  0]LogMemory: Physical Memory: 7050.97 MB used,  9253.54 MB free, 16304.50 MB total
+[2021.04.13-18.09.26:537][  0]LogMemory: Virtual Memory: 5174.92 MB used,  134212552.00 MB free, 134217728.00 MB total
+[2021.04.13-18.09.26:546][  0]LogWindows: WindowsPlatformFeatures enabled
+[2021.04.13-18.09.26:626][  0]LogInit: Physics initialised using underlying interface: PhysX
+[2021.04.13-18.09.26:628][  0]LogInit: Using OS detected language (en-US).
+[2021.04.13-18.09.26:628][  0]LogInit: Using OS detected locale (en-US).
+[2021.04.13-18.09.26:637][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
+[2021.04.13-18.09.27:032][  0]LogInit: Setting process to per monitor DPI aware
+[2021.04.13-18.09.27:239][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
+[2021.04.13-18.09.27:240][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
+[2021.04.13-18.09.52:478][  0]LogD3D12RHI: Aftermath initialized
+[2021.04.13-18.09.52:478][  0]LogD3D12RHI: Loading WinPixEventRuntime.dll for PIX profiling (from ../../../Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64).
+[2021.04.13-18.09.52:525][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.04.13-18.09.55:833][  0]LogD3D12RHI: Found D3D12 adapter 0: NVIDIA GeForce GTX 1070 Ti (Max supported Feature Level 12_1)
+[2021.04.13-18.09.55:833][  0]LogD3D12RHI: Adapter has 8079MB of dedicated video memory, 0MB of dedicated system memory, and 8152MB of shared system memory, 1 output[s]
+[2021.04.13-18.09.56:024][  0]LogD3D12RHI: Found D3D12 adapter 1: Microsoft Basic Render Driver (Max supported Feature Level 12_1)
+[2021.04.13-18.09.56:024][  0]LogD3D12RHI: Adapter has 0MB of dedicated video memory, 0MB of dedicated system memory, and 8152MB of shared system memory, 0 output[s]
+[2021.04.13-18.09.56:024][  0]LogD3D12RHI: Forcing D3D12.AsyncDeferredDeletion=0 as a workaround for a deadlock.
+[2021.04.13-18.09.56:077][  0]LogD3D12RHI: Chosen D3D12 Adapter Id = 0
+[2021.04.13-18.09.56:183][  0]LogD3D12RHI: Emitting draw events for PIX profiling.
+[2021.04.13-18.09.56:323][  0]LogD3D12RHI: The system supports ID3D12Device1.
+[2021.04.13-18.09.56:323][  0]LogD3D12RHI: The system supports ID3D12Device2.
+[2021.04.13-18.09.57:995][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for 3D Queue 0
+[2021.04.13-18.09.58:021][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for Copy Queue 0
+[2021.04.13-18.09.58:056][  0]LogD3D12RHI: [GPUBreadCrumb] Successfully setup breadcrumb resource for Compute Queue 0
+[2021.04.13-18.09.58:573][  0]LogD3D12RHI: Display: Not using pipeline state disk cache per r.D3D12.PSO.DiskCache=0
+[2021.04.13-18.09.58:573][  0]LogD3D12RHI: Display: Not using driver-optimized pipeline state disk cache per r.D3D12.PSO.DriverOptimizedDiskCache=0
+[2021.04.13-18.09.58:615][  0]LogD3D12RHI:     GPU DeviceId: 0x1b82 (for the marketing name, search the web for "GPU Device Id")
+[2021.04.13-18.09.58:615][  0]LogWindows: EnumDisplayDevices:
+[2021.04.13-18.09.58:616][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1070 Ti' (P:1 D:1)
+[2021.04.13-18.09.58:617][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1070 Ti' (P:0 D:0)
+[2021.04.13-18.09.58:617][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1070 Ti' (P:0 D:0)
+[2021.04.13-18.09.58:618][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1070 Ti' (P:0 D:0)
+[2021.04.13-18.09.58:618][  0]LogWindows: DebugString: FoundDriverCount:4 
+[2021.04.13-18.09.58:618][  0]LogD3D12RHI:     Adapter Name: NVIDIA GeForce GTX 1070 Ti
+[2021.04.13-18.09.58:618][  0]LogD3D12RHI:   Driver Version: 456.71 (internal:27.21.14.5671, unified:456.71)
+[2021.04.13-18.09.58:618][  0]LogD3D12RHI:      Driver Date: 9-30-2020
+[2021.04.13-18.09.58:633][  0]LogRHI: Texture pool is 4605 MB (70% of 6579 MB)
+[2021.04.13-18.09.58:636][  0]LogD3D12RHI: Async texture creation enabled
+[2021.04.13-18.09.58:636][  0]LogD3D12RHI: RHI has support for 64 bit atomics
+[2021.04.13-18.09.59:201][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AllDesktop'
+[2021.04.13-18.09.59:252][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android'
+[2021.04.13-18.09.59:252][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTC'
+[2021.04.13-18.09.59:252][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXT'
+[2021.04.13-18.09.59:252][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2'
+[2021.04.13-18.09.59:252][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'AndroidClient'
+[2021.04.13-18.09.59:252][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ASTCClient'
+[2021.04.13-18.09.59:252][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_DXTClient'
+[2021.04.13-18.09.59:252][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_ETC2Client'
+[2021.04.13-18.09.59:252][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_Multi'
+[2021.04.13-18.09.59:252][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Android_MultiClient'
+[2021.04.13-18.09.59:351][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOSClient'
+[2021.04.13-18.09.59:351][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'IOS'
+[2021.04.13-18.09.59:416][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Linux'
+[2021.04.13-18.09.59:445][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxNoEditor'
+[2021.04.13-18.09.59:474][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxClient'
+[2021.04.13-18.09.59:491][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxServer'
+[2021.04.13-18.09.59:509][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64NoEditor'
+[2021.04.13-18.09.59:522][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Client'
+[2021.04.13-18.09.59:543][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LinuxAArch64Server'
+[2021.04.13-18.09.59:608][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Lumin'
+[2021.04.13-18.09.59:609][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'LuminClient'
+[2021.04.13-18.09.59:701][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOSClient'
+[2021.04.13-18.09.59:701][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'TVOS'
+[2021.04.13-18.09.59:720][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsNoEditor'
+[2021.04.13-18.09.59:736][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'Windows'
+[2021.04.13-18.09.59:748][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsClient'
+[2021.04.13-18.09.59:760][  0]LogTargetPlatformManager: Display: Loaded TargetPlatform 'WindowsServer'
+[2021.04.13-18.09.59:760][  0]LogTargetPlatformManager: Display: Building Assets For Windows
+[2021.04.13-18.09.59:768][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
+[2021.04.13-18.10.00:087][  0]LogShaderCompilers: Guid format shader working directory is -79 characters bigger than the processId version (../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Intermediate/Shaders/WorkingDirectory/784/).
+[2021.04.13-18.10.00:087][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/lhutc/AppData/Local/Temp/UnrealShaderWorkingDir/0DAFB2F642EA42141B3FA8ACF28367C7/'.
+[2021.04.13-18.10.00:089][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
+[2021.04.13-18.10.00:089][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
+[2021.04.13-18.10.00:089][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
+[2021.04.13-18.10.08:684][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
+[2021.04.13-18.10.10:088][  0]LogDerivedDataCache: Loaded boot cache 1.40s 85MB C:/Users/lhutc/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.04.13-18.10.10:088][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/lhutc/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc
+[2021.04.13-18.10.10:088][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2021.04.13-18.10.10:088][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2021.04.13-18.10.10:088][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.04.13-18.10.10:088][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2021.04.13-18.10.10:100][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2021.04.13-18.10.10:100][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2021.04.13-18.10.10:100][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
+[2021.04.13-18.10.10:102][  0]LogDerivedDataCache: Using Local data cache path C:/Users/lhutc/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2021.04.13-18.10.10:102][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
+[2021.04.13-18.10.10:102][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
+[2021.04.13-18.10.10:253][  0]LogSlate: Using FreeType 2.10.0
+[2021.04.13-18.10.10:277][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2021.04.13-18.10.11:574][  0]LogAssetRegistry: FAssetRegistry took 0.0072 seconds to start up
+[2021.04.13-18.10.11:843][  0]LogInit: Selected Device Profile: [Windows]
+[2021.04.13-18.10.12:589][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
+[2021.04.13-18.10.12:589][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
+[2021.04.13-18.10.12:589][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
+[2021.04.13-18.10.12:589][  0]LogMeshReduction: No distributed automatic mesh merging module available
+[2021.04.13-18.10.12:589][  0]LogMeshMerging: No distributed automatic mesh merging module available
+[2021.04.13-18.10.12:607][  0]LogNetVersion: SphereJumper 1.0.0, NetCL: 13144385, EngineNetVer: 14, GameNetVer: 0 (Checksum: 1491008675)
+[2021.04.13-18.10.26:410][  0]LogAISub: UAISubsystem::UAISubsystem AISubsystem (0000018FB3806480), frame # 0
+[2021.04.13-18.10.26:410][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000018FB3677880), frame # 0
+[2021.04.13-18.10.26:411][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000018FB36E1C00), frame # 0
+[2021.04.13-18.10.26:991][  0]LogPackageLocalizationCache: Processed 19 localized package path(s) for 1 prioritized culture(s) in 0.573400 seconds
+[2021.04.13-18.10.26:998][  0]LogUObjectArray: 15917 objects as part of root set at end of initial load.
+[2021.04.13-18.10.26:998][  0]LogUObjectAllocator: 3965568 out of 0 bytes used by permanent object pool.
+[2021.04.13-18.10.26:998][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2021.04.13-18.10.29:277][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2021.04.13-18.10.29:286][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2021.04.13-18.10.30:283][  0]SourceControl: Source control is disabled
+[2021.04.13-18.10.30:283][  0]SourceControl: Source control is disabled
+[2021.04.13-18.10.30:286][  0]SourceControl: Source control is disabled
+[2021.04.13-18.10.30:289][  0]SourceControl: Source control is disabled
+[2021.04.13-18.10.30:295][  0]SourceControl: Source control is disabled
+[2021.04.13-18.10.31:183][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2021.04.13-18.10.31:402][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.04.13-18.10.31:402][  0]LogAudioCaptureCore: Display: No Audio Capture implementations found. Audio input will be silent.
+[2021.04.13-18.10.31:495][  0]LogOcInput: OculusInput pre-init called
+[2021.04.13-18.10.31:518][  0]LogWindows: Failed to load 'OVRPlugin.dll' (GetLastError=126)
+[2021.04.13-18.10.31:518][  0]LogWindows: File 'OVRPlugin.dll' does not exist
+[2021.04.13-18.10.31:728][  0]LogEngine: Initializing Engine...
+[2021.04.13-18.10.31:731][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2021.04.13-18.10.31:731][  0]LogMagicLeap: Warning: VR disabled because ZI is not enabled.  To enable, in the editor, Edit -> Project Settings -> Plugins -> Magic Leap Plugin -> Enable Zero Iteration
+[2021.04.13-18.10.31:733][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
+[2021.04.13-18.10.32:884][  0]LogInit: Initializing FReadOnlyCVARCache
+[2021.04.13-18.10.32:894][  0]LogAIModule: Creating AISystem for world Untitled
+[2021.04.13-18.10.32:894][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000018FBE853C00), frame # 0
+[2021.04.13-18.10.32:894][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000018FBE8C0E00), frame # 0
+[2021.04.13-18.10.32:912][  0]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.13-18.10.32:912][  0]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.13-18.10.32:912][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.13-18.10.32:912][  0]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.13-18.10.32:912][  0]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.13-18.10.32:912][  0]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.13-18.10.32:912][  0]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.13-18.10.32:912][  0]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.13-18.10.32:912][  0]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.13-18.10.32:912][  0]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.13-18.10.33:024][  0]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.13-18.10.33:024][  0]LogAudioMixer: Display: 1: FrontRight
+[2021.04.13-18.10.33:096][  0]LogAudioMixer: Display: Using Audio Device Headphones (Head Boss Stereo)
+[2021.04.13-18.10.33:099][  0]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.13-18.10.33:101][  0]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.13-18.10.33:101][  0]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.13-18.10.33:103][  0]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.13-18.10.33:104][  0]LogInit: FAudioDevice initialized.
+[2021.04.13-18.10.33:104][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
+[2021.04.13-18.10.33:837][  0]LogDerivedDataCache: Saved boot cache 0.73s 85MB C:/Users/lhutc/AppData/Local/UnrealEngine/4.25/DerivedDataCache/Boot.ddc.
+[2021.04.13-18.10.33:839][  0]LogInit: Texture streaming: Enabled
+[2021.04.13-18.10.33:878][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2021.04.13-18.10.33:878][  0]LogEditorSessionSummary: Verbose: Initializing EditorSessionSummaryWriter for editor session tracking
+[2021.04.13-18.10.33:880][  0]LogEditorSessionSummary: EditorSessionSummaryWriter initialized
+[2021.04.13-18.10.33:950][  0]LogInit: Transaction tracking system initialized
+[2021.04.13-18.10.34:069][  0]BlueprintLog: New page: Editor Load
+[2021.04.13-18.10.34:213][  0]LocalizationService: Localization service is disabled
+[2021.04.13-18.10.34:766][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2021.04.13-18.10.34:766][  0]LogCook: Display: Mobile HDR setting 1
+[2021.04.13-18.10.35:357][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Content/' took 0.01s
+[2021.04.13-18.10.36:679][  0]SourceControl: Source control is disabled
+[2021.04.13-18.10.36:679][  0]LogUnrealEdMisc: Loading editor; pre map load, took 74.834
+[2021.04.13-18.10.36:680][  0]LightingResults: New page: Lighting Build
+[2021.04.13-18.10.36:680][  0]LogWorld: UWorld::CleanupWorld for Untitled, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.10.36:681][  0]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.10.36:681][  0]MapCheck: New page: Map Check
+[2021.04.13-18.10.36:681][  0]LightingResults: New page: Lighting Build
+[2021.04.13-18.10.36:692][  0]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000018FBE853C00), frame # 0
+[2021.04.13-18.10.36:692][  0]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000018FBE8C0E00), frame # 0
+[2021.04.13-18.10.36:693][  0]LogUObjectHash: Compacting FUObjectHashTables data took   0.70ms
+[2021.04.13-18.10.40:224][  0]LogTexture: Warning: The data retrieved from the derived data cache for the texture LightMapTexture2D /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData:LQ_Lightmap_0_1 was invalid. The texture will be rebuild.
+[2021.04.13-18.10.40:224][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_1 (DXT1, 1024X1024)
+[2021.04.13-18.10.40:224][  0]LogTexture: Warning: The data retrieved from the derived data cache for the texture LightMapTexture2D /Game/StarterContent/Maps/Minimal_Default_BuiltData.Minimal_Default_BuiltData:LQ_Lightmap_0_2 was invalid. The texture will be rebuild.
+[2021.04.13-18.10.40:224][  0]LogTexture: Display: Building textures: LQ_Lightmap_0_2 (DXT1, 128X128)
+[2021.04.13-18.10.42:187][  0]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.10.42:187][  0]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000018FAAB0D000), frame # 0
+[2021.04.13-18.10.42:187][  0]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000018FAAB07B00), frame # 0
+[2021.04.13-18.10.43:116][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2021.04.13-18.10.43:141][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.20ms
+[2021.04.13-18.10.43:143][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2021.04.13-18.10.43:143][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.201ms to complete.
+[2021.04.13-18.10.43:143][  0]LogFileHelpers: Loading map 'Minimal_Default' took 6.464
+[2021.04.13-18.10.43:334][  0]LogUnrealEdMisc: Total Editor Startup Time, took 81.489
+[2021.04.13-18.10.44:929][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.10.45:616][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.10.45:637][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.10.45:655][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.10.46:630][  0]LogCollectionManager: Loaded 0 collections in 0.006334 seconds
+[2021.04.13-18.10.47:013][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Collections/' took 0.00s
+[2021.04.13-18.10.47:013][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Content/Developers/lhutc/Collections/' took 0.00s
+[2021.04.13-18.10.47:014][  0]LogFileCache: Scanning file cache for directory 'C:/Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Content/Collections/' took 0.00s
+[2021.04.13-18.10.47:014][  0]LogContentBrowser: Native class hierarchy populated in 0.0246 seconds. Added 3427 classes and 821 folders.
+[2021.04.13-18.10.47:143][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0007 seconds. Added 0 classes and 0 folders.
+[2021.04.13-18.10.50:248][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2021.04.13-18.10.50:475][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0007 seconds. Added 2 classes and 0 folders.
+[2021.04.13-18.10.52:854][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0006 seconds. Added 0 classes and 0 folders.
+[2021.04.13-18.10.52:854][  0]LogLoad: (Engine Initialization) Total time: 91.01 seconds
+[2021.04.13-18.10.52:854][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
+[2021.04.13-18.10.53:147][  0]LogContentStreaming: Texture pool size now 1000 MB
+[2021.04.13-18.10.53:186][  0]LogSlate: Took 0.000315 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2021.04.13-18.10.53:191][  0]LogSlate: Took 0.000271 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2021.04.13-18.10.53:267][  0]LogSlate: Took 0.036683 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2021.04.13-18.10.54:241][  1]LogRenderer: Reallocating scene render targets to support 596x424 Format 10 NumSamples 1 (Frame:1).
+[2021.04.13-18.10.55:104][  1]LogAssetRegistry: Asset discovery search completed in 43.5318 seconds
+[2021.04.13-18.10.55:109][  1]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000004 seconds (updated 0 objects)
+[2021.04.13-18.10.55:344][  2]LogSlate: Took 0.037717 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
+[2021.04.13-18.10.58:587][ 49]LogRenderer: Reallocating scene render targets to support 596x428 Format 10 NumSamples 1 (Frame:9).
+[2021.04.13-18.10.58:737][ 49]LogRenderer: Reallocating scene render targets to support 596x532 Format 10 NumSamples 1 (Frame:10).
+[2021.04.13-18.10.58:890][ 49]LogRenderer: Reallocating scene render targets to support 596x904 Format 10 NumSamples 1 (Frame:11).
+[2021.04.13-18.10.59:023][ 49]LogRenderer: Reallocating scene render targets to support 596x928 Format 10 NumSamples 1 (Frame:12).
+[2021.04.13-18.10.59:194][ 49]LogRenderer: Reallocating scene render targets to support 596x932 Format 10 NumSamples 1 (Frame:13).
+[2021.04.13-18.11.14:065][295]LogTemp: Repeating last play command: Selected Viewport
+[2021.04.13-18.11.14:105][295]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.13-18.11.14:206][295]PIE: New page: PIE session: Minimal_Default (Apr 13, 2021, 10:11:14 AM)
+[2021.04.13-18.11.14:231][295]LogOnline: OSS: Creating online subsystem instance for: NULL
+[2021.04.13-18.11.14:249][295]LogOnline: OSS: TryLoadSubsystemAndSetDefault: Loaded subsystem for module [NULL]
+[2021.04.13-18.11.14:249][295]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.11.14:280][295]LogPlayLevel: PIE: StaticDuplicateObject took: (0.031471s)
+[2021.04.13-18.11.14:296][295]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.11.14:296][295]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000190253D5600), frame # 295
+[2021.04.13-18.11.14:296][295]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000018FBF3DA980), frame # 295
+[2021.04.13-18.11.14:297][295]LogPlayLevel: PIE: World Init took: (0.003367s)
+[2021.04.13-18.11.14:297][295]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.047620s)
+[2021.04.13-18.11.14:323][295]LogUObjectHash: Compacting FUObjectHashTables data took   1.93ms
+[2021.04.13-18.11.14:330][295]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.13-18.11.14:330][295]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.13-18.11.14:330][295]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.13-18.11.14:330][295]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.13-18.11.14:330][295]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.13-18.11.14:330][295]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.13-18.11.14:330][295]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.13-18.11.14:330][295]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.13-18.11.14:331][295]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.13-18.11.14:331][295]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.13-18.11.14:336][295]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.13-18.11.14:336][295]LogAudioMixer: Display: 1: FrontRight
+[2021.04.13-18.11.14:357][295]LogAudioMixer: Display: Using Audio Device Headphones (Head Boss Stereo)
+[2021.04.13-18.11.14:357][295]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.13-18.11.14:358][295]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.13-18.11.14:358][295]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.13-18.11.14:358][295]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.13-18.11.14:376][295]LogInit: FAudioDevice initialized.
+[2021.04.13-18.11.14:386][295]LogLoad: Game class is 'MyGameMode_C'
+[2021.04.13-18.11.14:415][295]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.04.13-14.11.14
+[2021.04.13-18.11.14:416][295]LogWorld: Bringing up level for play took: 0.004046
+[2021.04.13-18.11.14:416][295]LogOnline: OSS: Creating online subsystem instance for: :Context_6
+[2021.04.13-18.11.14:532][295]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0009 seconds. Added 20 classes and 0 folders.
+[2021.04.13-18.11.14:742][295]PIE: Server logged in
+[2021.04.13-18.11.14:743][295]PIE: Play in editor total start time 0.639 seconds.
+[2021.04.13-18.11.23:879][191]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.11.23:893][191]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.11.23:917][191]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.11.23:953][191]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.11.24:029][191]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.13-18.11.24:062][191]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.11.24:125][191]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.11.24:153][191]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000018FBF3DA980), frame # 1191
+[2021.04.13-18.11.24:153][191]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000190253D5600), frame # 1191
+[2021.04.13-18.11.24:155][191]LogUObjectHash: Compacting FUObjectHashTables data took   1.12ms
+[2021.04.13-18.11.24:481][192]LogPlayLevel: Display: Destroying online subsystem :Context_6
+[2021.04.13-18.11.27:389][497]LogTemp: Repeating last play command: Selected Viewport
+[2021.04.13-18.11.27:403][497]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.13-18.11.27:403][497]PIE: New page: PIE session: Minimal_Default (Apr 13, 2021, 10:11:27 AM)
+[2021.04.13-18.11.27:403][497]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.11.27:410][497]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006751s)
+[2021.04.13-18.11.27:411][497]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.11.27:411][497]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000019019261600), frame # 1497
+[2021.04.13-18.11.27:437][497]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000018FB3ADA200), frame # 1497
+[2021.04.13-18.11.27:437][497]LogPlayLevel: PIE: World Init took: (0.027166s)
+[2021.04.13-18.11.27:437][497]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.034039s)
+[2021.04.13-18.11.27:465][497]LogUObjectHash: Compacting FUObjectHashTables data took   0.66ms
+[2021.04.13-18.11.27:466][497]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.13-18.11.27:466][497]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.13-18.11.27:466][497]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.13-18.11.27:466][497]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.13-18.11.27:466][497]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.13-18.11.27:466][497]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.13-18.11.27:466][497]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.13-18.11.27:466][497]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.13-18.11.27:467][497]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.13-18.11.27:467][497]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.13-18.11.27:475][497]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.13-18.11.27:475][497]LogAudioMixer: Display: 1: FrontRight
+[2021.04.13-18.11.27:496][497]LogAudioMixer: Display: Using Audio Device Headphones (Head Boss Stereo)
+[2021.04.13-18.11.27:496][497]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.13-18.11.27:496][497]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.13-18.11.27:496][497]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.13-18.11.27:497][497]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.13-18.11.27:528][497]LogInit: FAudioDevice initialized.
+[2021.04.13-18.11.27:597][497]LogLoad: Game class is 'MyGameMode_C'
+[2021.04.13-18.11.27:603][497]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.04.13-14.11.27
+[2021.04.13-18.11.27:604][497]LogWorld: Bringing up level for play took: 0.005015
+[2021.04.13-18.11.27:604][497]LogOnline: OSS: Creating online subsystem instance for: :Context_7
+[2021.04.13-18.11.27:705][497]PIE: Server logged in
+[2021.04.13-18.11.27:707][497]PIE: Play in editor total start time 0.304 seconds.
+[2021.04.13-18.11.41:658][148]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.11.41:659][148]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.11.41:659][148]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.11.41:659][148]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.11.41:669][148]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.13-18.11.41:670][148]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.11.41:705][148]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.11.41:707][148]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000018FB3ADA200), frame # 3148
+[2021.04.13-18.11.41:707][148]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000019019261600), frame # 3148
+[2021.04.13-18.11.41:708][148]LogUObjectHash: Compacting FUObjectHashTables data took   0.67ms
+[2021.04.13-18.11.41:741][149]LogPlayLevel: Display: Destroying online subsystem :Context_7
+[2021.04.13-18.11.51:006][564]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere7)
+[2021.04.13-18.11.51:706][564]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere7)
+[2021.04.13-18.11.54:662][565]LogEditorViewport: Clicking on Actor (context menu): BP_Sky_Sphere_C (BP_Sky_Sphere6)
+[2021.04.13-18.12.43:950][296]LogAssetEditorSubsystem: Opening Asset editor for WidgetBlueprint /Game/Blueprints/EndGameUI.EndGameUI
+[2021.04.13-18.12.46:020][296]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0015 seconds. Added 125 classes and 0 folders.
+[2021.04.13-18.12.50:327][296]LogSlate: Took 0.000389 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2021.04.13-18.12.53:151][523]LogSlate: Window 'EndGameUI' being destroyed
+[2021.04.13-18.12.54:360][660]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/Player.Player
+[2021.04.13-18.16.40:100][829]LogSlate: Took 0.025894 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2021.04.13-18.21.40:602][ 25]BlueprintLog: New page: Compile Player
+[2021.04.13-18.21.40:963][ 25]LogUObjectHash: Compacting FUObjectHashTables data took   4.48ms
+[2021.04.13-18.21.41:261][ 25]LogSlate: Took 0.065240 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/DroidSansMono.ttf' (77K)
+[2021.04.13-18.21.43:500][261]LogTemp: Repeating last play command: Selected Viewport
+[2021.04.13-18.21.43:514][261]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.13-18.21.43:514][261]PIE: New page: PIE session: Minimal_Default (Apr 13, 2021, 10:21:43 AM)
+[2021.04.13-18.21.43:514][261]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.21.43:520][261]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006542s)
+[2021.04.13-18.21.43:521][261]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.21.43:521][261]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000190046C4600), frame # 54261
+[2021.04.13-18.21.43:521][261]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000019047879300), frame # 54261
+[2021.04.13-18.21.43:522][261]LogPlayLevel: PIE: World Init took: (0.001093s)
+[2021.04.13-18.21.43:522][261]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007744s)
+[2021.04.13-18.21.43:553][261]LogUObjectHash: Compacting FUObjectHashTables data took   3.66ms
+[2021.04.13-18.21.43:555][261]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.13-18.21.43:555][261]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.13-18.21.43:555][261]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.13-18.21.43:555][261]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.13-18.21.43:555][261]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.13-18.21.43:555][261]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.13-18.21.43:555][261]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.13-18.21.43:555][261]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.13-18.21.43:556][261]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.13-18.21.43:556][261]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.13-18.21.43:560][261]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.13-18.21.43:560][261]LogAudioMixer: Display: 1: FrontRight
+[2021.04.13-18.21.43:576][261]LogAudioMixer: Display: Using Audio Device Headphones (Head Boss Stereo)
+[2021.04.13-18.21.43:576][261]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.13-18.21.43:576][261]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.13-18.21.43:576][261]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.13-18.21.43:576][261]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.13-18.21.43:590][261]LogInit: FAudioDevice initialized.
+[2021.04.13-18.21.43:599][261]LogLoad: Game class is 'MyGameMode_C'
+[2021.04.13-18.21.43:602][261]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.04.13-14.21.43
+[2021.04.13-18.21.43:602][261]LogWorld: Bringing up level for play took: 0.001996
+[2021.04.13-18.21.43:602][261]LogOnline: OSS: Creating online subsystem instance for: :Context_11
+[2021.04.13-18.21.43:605][261]PIE: Server logged in
+[2021.04.13-18.21.43:605][261]PIE: Play in editor total start time 0.092 seconds.
+[2021.04.13-18.21.51:545][187]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.21.51:589][187]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.21.51:589][187]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.21.51:593][187]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.21.51:594][187]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.21.51:684][187]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000019047879300), frame # 55187
+[2021.04.13-18.21.51:684][187]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000190046C4600), frame # 55187
+[2021.04.13-18.21.51:688][187]LogUObjectHash: Compacting FUObjectHashTables data took   3.84ms
+[2021.04.13-18.21.51:713][187]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.21.51:722][187]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008683s)
+[2021.04.13-18.21.51:723][187]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.21.51:723][187]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000019048521000), frame # 55187
+[2021.04.13-18.21.51:723][187]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001904AF49A80), frame # 55187
+[2021.04.13-18.21.51:723][187]LogPlayLevel: PIE: World Init took: (0.001301s)
+[2021.04.13-18.21.51:723][187]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.010171s)
+[2021.04.13-18.21.51:723][187]LogLoad: Game class is 'MyGameMode_C'
+[2021.04.13-18.21.51:725][187]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.04.13-14.21.51
+[2021.04.13-18.21.51:725][187]LogWorld: Bringing up level for play took: 0.001375
+[2021.04.13-18.21.51:752][187]LogLoad: Took 0.162878 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
+[2021.04.13-18.22.00:812][263]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.22.00:812][263]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.22.00:812][263]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.22.00:813][263]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.22.00:813][263]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.22.00:876][263]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001904AF49A80), frame # 56263
+[2021.04.13-18.22.00:876][263]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000019048521000), frame # 56263
+[2021.04.13-18.22.00:879][263]LogUObjectHash: Compacting FUObjectHashTables data took   2.46ms
+[2021.04.13-18.22.00:880][263]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.22.00:886][263]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006083s)
+[2021.04.13-18.22.00:887][263]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.22.00:887][263]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000018FD86F7C00), frame # 56263
+[2021.04.13-18.22.00:887][263]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001904AA50900), frame # 56263
+[2021.04.13-18.22.00:888][263]LogPlayLevel: PIE: World Init took: (0.001027s)
+[2021.04.13-18.22.00:888][263]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007236s)
+[2021.04.13-18.22.00:888][263]LogLoad: Game class is 'MyGameMode_C'
+[2021.04.13-18.22.00:890][263]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.04.13-14.22.00
+[2021.04.13-18.22.00:890][263]LogWorld: Bringing up level for play took: 0.001459
+[2021.04.13-18.22.00:892][263]LogLoad: Took 0.079032 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
+[2021.04.13-18.22.05:166][773]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.22.05:166][773]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.22.05:166][773]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.22.05:166][773]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.22.05:166][773]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.22.05:241][773]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001904AA50900), frame # 56773
+[2021.04.13-18.22.05:241][773]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000018FD86F7C00), frame # 56773
+[2021.04.13-18.22.05:244][773]LogUObjectHash: Compacting FUObjectHashTables data took   2.69ms
+[2021.04.13-18.22.05:245][773]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.22.05:252][773]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006991s)
+[2021.04.13-18.22.05:253][773]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.22.05:253][773]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000018FD86F6C00), frame # 56773
+[2021.04.13-18.22.05:253][773]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001904969AD40), frame # 56773
+[2021.04.13-18.22.05:254][773]LogPlayLevel: PIE: World Init took: (0.001039s)
+[2021.04.13-18.22.05:254][773]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.008169s)
+[2021.04.13-18.22.05:254][773]LogLoad: Game class is 'MyGameMode_C'
+[2021.04.13-18.22.05:255][773]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.04.13-14.22.05
+[2021.04.13-18.22.05:255][773]LogWorld: Bringing up level for play took: 0.001111
+[2021.04.13-18.22.05:257][773]LogLoad: Took 0.090854 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
+[2021.04.13-18.22.07:436][ 31]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.22.07:436][ 31]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.22.07:436][ 31]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.22.07:436][ 31]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.22.07:437][ 31]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.22.07:494][ 31]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001904969AD40), frame # 57031
+[2021.04.13-18.22.07:494][ 31]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000018FD86F6C00), frame # 57031
+[2021.04.13-18.22.07:497][ 31]LogUObjectHash: Compacting FUObjectHashTables data took   2.51ms
+[2021.04.13-18.22.07:498][ 31]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.22.07:507][ 31]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009480s)
+[2021.04.13-18.22.07:508][ 31]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.22.07:508][ 31]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000018FD86F7800), frame # 57031
+[2021.04.13-18.22.07:508][ 31]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001901477F240), frame # 57031
+[2021.04.13-18.22.07:508][ 31]LogPlayLevel: PIE: World Init took: (0.001039s)
+[2021.04.13-18.22.07:508][ 31]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.010649s)
+[2021.04.13-18.22.07:508][ 31]LogLoad: Game class is 'MyGameMode_C'
+[2021.04.13-18.22.07:510][ 31]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.04.13-14.22.07
+[2021.04.13-18.22.07:510][ 31]LogWorld: Bringing up level for play took: 0.001083
+[2021.04.13-18.22.07:512][ 31]LogLoad: Took 0.075499 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
+[2021.04.13-18.22.14:058][804]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.22.14:058][804]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.22.14:058][804]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.22.14:059][804]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.22.14:065][804]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.13-18.22.14:070][804]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.22.14:122][804]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.22.14:123][804]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001901477F240), frame # 57804
+[2021.04.13-18.22.14:123][804]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000018FD86F7800), frame # 57804
+[2021.04.13-18.22.14:126][804]LogUObjectHash: Compacting FUObjectHashTables data took   2.48ms
+[2021.04.13-18.22.14:153][805]LogPlayLevel: Display: Destroying online subsystem :Context_11
+[2021.04.13-18.23.20:857][342]LogSlate: Window 'Pick Parent Class' being destroyed
+[2021.04.13-18.23.31:937][603]LogAssetEditorSubsystem: Opening Asset editor for Blueprint /Game/Blueprints/EndGoal.EndGoal
+[2021.04.13-18.23.32:405][604]LogRenderer: Reallocating scene render targets to support 720x964 Format 10 NumSamples 1 (Frame:1).
+[2021.04.13-18.25.54:840][ 83]LogSlate: Window 'Color Picker' being destroyed
+[2021.04.13-18.25.55:090][ 84]LogSlate: Window 'Color Picker' being destroyed
+[2021.04.13-18.26.08:427][180]LogSlate: Window 'Color Picker' being destroyed
+[2021.04.13-18.26.53:211][ 54]BlueprintLog: New page: Compile EndGoal
+[2021.04.13-18.26.53:310][ 54]LogUObjectHash: Compacting FUObjectHashTables data took   5.47ms
+[2021.04.13-18.27.34:323][678]LogSlate: Prevented a slow task dialog from being summoned while a context menu was open
+[2021.04.13-18.31.47:406][ 97]LogUObjectHash: Compacting FUObjectHashTables data took   4.65ms
+[2021.04.13-18.31.47:409][ 97]LogFileHelpers: Editor autosave (incl. sublevels) for '/Game/StarterContent/Maps/Minimal_Default' took 0.067
+[2021.04.13-18.31.47:426][ 97]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/Player] ([1] browsable assets)...
+[2021.04.13-18.31.47:480][ 97]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/Player.Player]
+[2021.04.13-18.31.47:480][ 97]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/Player]
+[2021.04.13-18.31.47:856][ 97]LogSavePackage: Moving '../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Player_Auto18661F065489FC5AD035B379A3F434376.tmp' to '../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Autosaves/Game/Blueprints/Player_Auto1.uasset'
+[2021.04.13-18.31.47:900][ 97]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Blueprints/EndGoal] ([1] browsable assets)...
+[2021.04.13-18.31.47:923][ 97]OBJ SavePackage:     Rendered thumbnail for [Blueprint /Game/Blueprints/EndGoal.EndGoal]
+[2021.04.13-18.31.47:923][ 97]OBJ SavePackage: Finished generating thumbnails for package [/Game/Blueprints/EndGoal]
+[2021.04.13-18.31.47:952][ 97]LogSavePackage: Moving '../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/EndGoal_Auto155EE549C4F4168D14400F1B733B886C3.tmp' to '../../../../../../Users/lhutc/OneDrive/Desktop/Software Dev Practice/Unreal Projects/SphereJumperV2/Sphere-Jumper/SphereJumper/Saved/Autosaves/Game/Blueprints/EndGoal_Auto1.uasset'
+[2021.04.13-18.31.47:954][ 97]LogFileHelpers: Auto-saving content packages took 0.544
+[2021.04.13-18.35.53:667][306]BlueprintLog: New page: Compile EndGoal
+[2021.04.13-18.35.53:686][306]LogBlueprint: Error: [Compiler EndGoal] The type of  Object  is undetermined.  Connect something to  Cast To Player  to imply a specific type.
+[2021.04.13-18.35.53:686][306]LogBlueprint: Error: [Compiler EndGoal] The current value of the ' Object ' pin is invalid: Unsupported type Object Wildcard on pin Object
+[2021.04.13-18.35.53:810][306]LogUObjectHash: Compacting FUObjectHashTables data took   4.25ms
+[2021.04.13-18.37.19:726][612]BlueprintLog: New page: Compile EndGoal
+[2021.04.13-18.37.19:786][612]LogUObjectHash: Compacting FUObjectHashTables data took   4.77ms
+[2021.04.13-18.37.25:711][294]LogTemp: Repeating last play command: Selected Viewport
+[2021.04.13-18.37.25:725][294]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.13-18.37.25:725][294]PIE: New page: PIE session: Minimal_Default (Apr 13, 2021, 10:37:25 AM)
+[2021.04.13-18.37.25:757][294]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.37.25:763][294]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006653s)
+[2021.04.13-18.37.25:764][294]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.37.25:764][294]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (00000190739B3E00), frame # 137294
+[2021.04.13-18.37.25:764][294]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001904AF48F40), frame # 137294
+[2021.04.13-18.37.25:765][294]LogPlayLevel: PIE: World Init took: (0.001121s)
+[2021.04.13-18.37.25:765][294]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007919s)
+[2021.04.13-18.37.25:826][294]LogUObjectHash: Compacting FUObjectHashTables data took   7.05ms
+[2021.04.13-18.37.25:828][294]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.13-18.37.25:828][294]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.13-18.37.25:828][294]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.13-18.37.25:828][294]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.13-18.37.25:828][294]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.13-18.37.25:828][294]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.13-18.37.25:828][294]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.13-18.37.25:828][294]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.13-18.37.25:829][294]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.13-18.37.25:829][294]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.13-18.37.25:835][294]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.13-18.37.25:835][294]LogAudioMixer: Display: 1: FrontRight
+[2021.04.13-18.37.25:856][294]LogAudioMixer: Display: Using Audio Device Headphones (Head Boss Stereo)
+[2021.04.13-18.37.25:857][294]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.13-18.37.25:857][294]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.13-18.37.25:857][294]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.13-18.37.25:857][294]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.13-18.37.25:889][294]LogInit: FAudioDevice initialized.
+[2021.04.13-18.37.25:901][294]LogLoad: Game class is 'MyGameMode_C'
+[2021.04.13-18.37.25:904][294]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.04.13-14.37.25
+[2021.04.13-18.37.25:904][294]LogWorld: Bringing up level for play took: 0.002669
+[2021.04.13-18.37.25:905][294]LogOnline: OSS: Creating online subsystem instance for: :Context_16
+[2021.04.13-18.37.25:909][294]PIE: Server logged in
+[2021.04.13-18.37.25:910][294]PIE: Play in editor total start time 0.185 seconds.
+[2021.04.13-18.37.31:508][954]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.37.31:508][954]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.37.31:508][954]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.37.31:508][954]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.37.31:517][954]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.13-18.37.31:523][954]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.37.31:580][954]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.37.31:603][954]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001904AF48F40), frame # 137954
+[2021.04.13-18.37.31:603][954]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (00000190739B3E00), frame # 137954
+[2021.04.13-18.37.31:606][954]LogUObjectHash: Compacting FUObjectHashTables data took   3.12ms
+[2021.04.13-18.37.31:642][955]LogPlayLevel: Display: Destroying online subsystem :Context_16
+[2021.04.13-18.38.04:819][879]LogWorld: UWorld::CleanupWorld for World_7, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.38.04:819][879]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.38.05:782][949]LogWorld: UWorld::CleanupWorld for World_6, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.38.05:782][949]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.38.05:836][949]LogWorld: UWorld::CleanupWorld for World_5, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.38.05:836][949]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.38.50:692][ 66]LogEditorViewport: Clicking on Actor (LMB): BP_Sky_Sphere_C (BP_Sky_Sphere7)
+[2021.04.13-18.38.55:528][599]LogTemp: Repeating last play command: Selected Viewport
+[2021.04.13-18.38.55:542][599]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2021.04.13-18.38.55:543][599]PIE: New page: PIE session: Minimal_Default (Apr 13, 2021, 10:38:55 AM)
+[2021.04.13-18.38.55:567][599]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.38.55:574][599]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006824s)
+[2021.04.13-18.38.55:575][599]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.38.55:575][599]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (0000019019207400), frame # 147599
+[2021.04.13-18.38.55:575][599]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001903C57D6C0), frame # 147599
+[2021.04.13-18.38.55:575][599]LogPlayLevel: PIE: World Init took: (0.001114s)
+[2021.04.13-18.38.55:575][599]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.008075s)
+[2021.04.13-18.38.55:647][599]LogUObjectHash: Compacting FUObjectHashTables data took   3.87ms
+[2021.04.13-18.38.55:659][599]LogAudioMixer: Display: Audio Mixer Platform Settings:
+[2021.04.13-18.38.55:659][599]LogAudioMixer: Display: 	Sample Rate:						  48000
+[2021.04.13-18.38.55:659][599]LogAudioMixer: Display: 	Callback Buffer Frame Size Requested: 1024
+[2021.04.13-18.38.55:659][599]LogAudioMixer: Display: 	Callback Buffer Frame Size To Use:	  1024
+[2021.04.13-18.38.55:659][599]LogAudioMixer: Display: 	Number of buffers to queue:			  2
+[2021.04.13-18.38.55:659][599]LogAudioMixer: Display: 	Max Channels (voices):				  32
+[2021.04.13-18.38.55:659][599]LogAudioMixer: Display: 	Number of Async Source Workers:		  0
+[2021.04.13-18.38.55:659][599]LogAudio: Display: AudioDevice MaxSources: 32
+[2021.04.13-18.38.55:659][599]LogAudio: Display: Using built-in audio occlusion.
+[2021.04.13-18.38.55:659][599]LogAudioMixer: Display: Initializing audio mixer.
+[2021.04.13-18.38.55:663][599]LogAudioMixer: Display: 0: FrontLeft
+[2021.04.13-18.38.55:663][599]LogAudioMixer: Display: 1: FrontRight
+[2021.04.13-18.38.55:678][599]LogAudioMixer: Display: Using Audio Device Headphones (Head Boss Stereo)
+[2021.04.13-18.38.55:678][599]LogAudioMixer: Display: Initializing Sound Submixes...
+[2021.04.13-18.38.55:678][599]LogAudioMixer: Display: Creating Master Submix 'MasterSubmixDefault'
+[2021.04.13-18.38.55:678][599]LogAudioMixer: Display: Creating Master Submix 'MasterReverbSubmixDefault'
+[2021.04.13-18.38.55:678][599]LogAudioMixer: Display: Creating Master Submix 'MasterEQSubmixDefault'
+[2021.04.13-18.38.55:693][599]LogInit: FAudioDevice initialized.
+[2021.04.13-18.38.55:703][599]LogLoad: Game class is 'MyGameMode_C'
+[2021.04.13-18.38.55:705][599]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.04.13-14.38.55
+[2021.04.13-18.38.55:705][599]LogWorld: Bringing up level for play took: 0.002023
+[2021.04.13-18.38.55:706][599]LogOnline: OSS: Creating online subsystem instance for: :Context_17
+[2021.04.13-18.38.55:708][599]PIE: Server logged in
+[2021.04.13-18.38.55:709][599]PIE: Play in editor total start time 0.167 seconds.
+[2021.04.13-18.39.18:609][324]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.39.18:609][324]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.39.18:609][324]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.39.18:610][324]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.39.18:610][324]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.39.18:694][324]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001903C57D6C0), frame # 150324
+[2021.04.13-18.39.18:694][324]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (0000019019207400), frame # 150324
+[2021.04.13-18.39.18:699][324]LogUObjectHash: Compacting FUObjectHashTables data took   4.42ms
+[2021.04.13-18.39.18:702][324]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.39.18:709][324]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007566s)
+[2021.04.13-18.39.18:710][324]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.39.18:710][324]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001901210C200), frame # 150324
+[2021.04.13-18.39.18:710][324]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (000001903CC679C0), frame # 150324
+[2021.04.13-18.39.18:711][324]LogPlayLevel: PIE: World Init took: (0.001197s)
+[2021.04.13-18.39.18:711][324]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.008906s)
+[2021.04.13-18.39.18:711][324]LogLoad: Game class is 'MyGameMode_C'
+[2021.04.13-18.39.18:713][324]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.04.13-14.39.18
+[2021.04.13-18.39.18:713][324]LogWorld: Bringing up level for play took: 0.001149
+[2021.04.13-18.39.18:714][324]LogLoad: Took 0.105173 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
+[2021.04.13-18.39.41:042][979]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.39.41:042][979]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.39.41:042][979]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.39.41:043][979]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.39.41:043][979]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.39.41:093][979]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (000001903CC679C0), frame # 152979
+[2021.04.13-18.39.41:093][979]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001901210C200), frame # 152979
+[2021.04.13-18.39.41:095][979]LogUObjectHash: Compacting FUObjectHashTables data took   2.58ms
+[2021.04.13-18.39.41:098][979]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.39.41:104][979]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006141s)
+[2021.04.13-18.39.41:105][979]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.39.41:105][979]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001902F20F800), frame # 152979
+[2021.04.13-18.39.41:105][979]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (00000190480DED40), frame # 152979
+[2021.04.13-18.39.41:105][979]LogPlayLevel: PIE: World Init took: (0.001041s)
+[2021.04.13-18.39.41:106][979]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007322s)
+[2021.04.13-18.39.41:106][979]LogLoad: Game class is 'MyGameMode_C'
+[2021.04.13-18.39.41:107][979]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.04.13-14.39.41
+[2021.04.13-18.39.41:108][979]LogWorld: Bringing up level for play took: 0.001258
+[2021.04.13-18.39.41:109][979]LogLoad: Took 0.066464 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
+[2021.04.13-18.40.04:933][827]LogNet: Browse: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.40.04:933][827]LogLoad: LoadMap: /Game/StarterContent/Maps/Minimal_Default
+[2021.04.13-18.40.04:933][827]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.40.04:933][827]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.40.04:934][827]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.40.04:987][827]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (00000190480DED40), frame # 155827
+[2021.04.13-18.40.04:987][827]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001902F20F800), frame # 155827
+[2021.04.13-18.40.04:990][827]LogUObjectHash: Compacting FUObjectHashTables data took   2.44ms
+[2021.04.13-18.40.04:992][827]LogPlayLevel: Creating play world package: /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.40.04:999][827]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006719s)
+[2021.04.13-18.40.05:000][827]LogAIModule: Creating AISystem for world Minimal_Default
+[2021.04.13-18.40.05:000][827]LogAISub: UAISubsystem::UAISubsystem EnvQueryManager (000001903FAFB000), frame # 155827
+[2021.04.13-18.40.05:000][827]LogAISub: UAISubsystem::UAISubsystem AIPerceptionSystem (0000019057BD4400), frame # 155827
+[2021.04.13-18.40.05:000][827]LogPlayLevel: PIE: World Init took: (0.001063s)
+[2021.04.13-18.40.05:000][827]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/StarterContent/Maps/Minimal_Default.Minimal_Default to /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default (0.007917s)
+[2021.04.13-18.40.05:000][827]LogLoad: Game class is 'MyGameMode_C'
+[2021.04.13-18.40.05:002][827]LogWorld: Bringing World /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default.Minimal_Default up for play (max tick rate 0) at 2021.04.13-14.40.05
+[2021.04.13-18.40.05:002][827]LogWorld: Bringing up level for play took: 0.001217
+[2021.04.13-18.40.05:004][827]LogLoad: Took 0.071220 seconds to LoadMap(/Game/StarterContent/Maps/UEDPIE_0_Minimal_Default)
+[2021.04.13-18.40.35:938][177]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.40.35:938][177]LogWorld: BeginTearingDown for /Game/StarterContent/Maps/UEDPIE_0_Minimal_Default
+[2021.04.13-18.40.35:938][177]LogWorld: UWorld::CleanupWorld for Minimal_Default, bSessionEnded=true, bCleanupResources=true
+[2021.04.13-18.40.35:939][177]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.40.35:947][177]LogPlayLevel: Display: Shutting down PIE online subsystems
+[2021.04.13-18.40.35:952][177]LogSlate: InvalidateAllWidgets triggered.  All widgets were invalidated
+[2021.04.13-18.40.36:002][177]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
+[2021.04.13-18.40.36:003][177]LogAISub: UAISubsystem::~UAISubsystem AIPerceptionSystem (0000019057BD4400), frame # 156177
+[2021.04.13-18.40.36:003][177]LogAISub: UAISubsystem::~UAISubsystem EnvQueryManager (000001903FAFB000), frame # 156177
+[2021.04.13-18.40.36:006][177]LogUObjectHash: Compacting FUObjectHashTables data took   2.81ms
+[2021.04.13-18.40.36:050][178]LogPlayLevel: Display: Destroying online subsystem :Context_17
